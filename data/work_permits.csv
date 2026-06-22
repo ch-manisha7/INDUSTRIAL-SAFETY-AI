@@ -1,0 +1,301 @@
+permit_id,permit_type,zone,issued_to,supervisor,start_time,end_time,status,gas_clearance_obtained,ppe_verified
+PTW-1000,Hot Work,Zone-A (Coke Oven),Worker-48,Supervisor-5,2025-01-28T06:00:00,2025-01-28T08:42:51.274716,Active,True,False
+PTW-1001,Chemical Handling,Zone-A (Coke Oven),Worker-38,Supervisor-7,2025-02-01T14:00:00,2025-02-01T15:13:20.923523,Active,True,True
+PTW-1002,Chemical Handling,Zone-A (Coke Oven),Worker-36,Supervisor-4,2025-01-22T13:00:00,2025-01-22T19:00:43.694246,Suspended,False,True
+PTW-1003,Chemical Handling,Zone-C (Oxygen Plant),Worker-1,Supervisor-3,2025-01-20T03:00:00,2025-01-20T08:53:13.112754,Active,True,True
+PTW-1004,Electrical Isolation,Zone-A (Coke Oven),Worker-6,Supervisor-7,2025-01-10T04:00:00,2025-01-10T05:40:37.252696,Active,True,True
+PTW-1005,Height Work,Zone-A (Coke Oven),Worker-25,Supervisor-2,2025-02-01T03:00:00,2025-02-01T07:51:51.423908,Suspended,True,False
+PTW-1006,Hot Work,Zone-A (Coke Oven),Worker-43,Supervisor-4,2025-01-09T04:00:00,2025-01-09T10:24:41.322188,Active,True,True
+PTW-1007,Electrical Isolation,Zone-D (Workshop),Worker-41,Supervisor-6,2025-01-17T05:00:00,2025-01-17T07:08:18.883248,Active,True,False
+PTW-1008,Hot Work,Zone-B (Blast Furnace),Worker-35,Supervisor-4,2025-01-12T09:00:00,2025-01-12T11:08:37.742843,Closed,True,False
+PTW-1009,Chemical Handling,Zone-B (Blast Furnace),Worker-44,Supervisor-6,2025-01-30T08:00:00,2025-01-30T14:53:59.868389,Active,True,True
+PTW-1010,Electrical Isolation,Zone-D (Workshop),Worker-18,Supervisor-2,2025-02-04T08:00:00,2025-02-04T10:28:36.767658,Suspended,True,True
+PTW-1011,Height Work,Zone-D (Workshop),Worker-42,Supervisor-8,2025-01-28T23:00:00,2025-01-29T01:00:00.364079,Active,True,False
+PTW-1012,Chemical Handling,Zone-C (Oxygen Plant),Worker-48,Supervisor-10,2025-01-24T22:00:00,2025-01-25T01:59:56.532448,Suspended,False,True
+PTW-1013,Confined Space Entry,Zone-D (Workshop),Worker-6,Supervisor-1,2025-01-10T08:00:00,2025-01-10T15:01:39.793324,Active,True,False
+PTW-1014,Chemical Handling,Zone-A (Coke Oven),Worker-25,Supervisor-7,2025-01-19T00:00:00,2025-01-19T05:10:16.388395,Closed,True,False
+PTW-1015,Hot Work,Zone-A (Coke Oven),Worker-44,Supervisor-9,2025-02-06T17:00:00,2025-02-06T23:15:22.120550,Active,True,True
+PTW-1016,Confined Space Entry,Zone-D (Workshop),Worker-1,Supervisor-5,2025-01-19T13:00:00,2025-01-19T20:48:11.580092,Active,True,False
+PTW-1017,Chemical Handling,Zone-B (Blast Furnace),Worker-10,Supervisor-6,2025-01-13T17:00:00,2025-01-13T23:20:15.272162,Suspended,True,False
+PTW-1018,Height Work,Zone-A (Coke Oven),Worker-8,Supervisor-6,2025-01-14T19:00:00,2025-01-15T02:09:03.791321,Active,True,True
+PTW-1019,Chemical Handling,Zone-A (Coke Oven),Worker-6,Supervisor-8,2025-01-11T06:00:00,2025-01-11T12:42:43.785986,Suspended,True,True
+PTW-1020,Height Work,Zone-B (Blast Furnace),Worker-17,Supervisor-9,2025-01-29T03:00:00,2025-01-29T10:06:25.312635,Closed,True,False
+PTW-1021,Confined Space Entry,Zone-C (Oxygen Plant),Worker-26,Supervisor-6,2025-02-02T05:00:00,2025-02-02T09:04:00.122115,Suspended,False,True
+PTW-1022,Confined Space Entry,Zone-A (Coke Oven),Worker-22,Supervisor-1,2025-01-11T13:00:00,2025-01-11T18:07:05.379705,Active,True,True
+PTW-1023,Hot Work,Zone-B (Blast Furnace),Worker-5,Supervisor-1,2025-01-04T00:00:00,2025-01-04T07:01:02.812086,Active,True,True
+PTW-1024,Height Work,Zone-B (Blast Furnace),Worker-35,Supervisor-3,2025-01-29T13:00:00,2025-01-29T19:03:48.484660,Suspended,False,True
+PTW-1025,Height Work,Zone-D (Workshop),Worker-13,Supervisor-2,2025-02-03T11:00:00,2025-02-03T12:40:42.656519,Closed,True,True
+PTW-1026,Height Work,Zone-A (Coke Oven),Worker-44,Supervisor-2,2025-01-18T12:00:00,2025-01-18T13:25:27.439387,Active,True,True
+PTW-1027,Confined Space Entry,Zone-D (Workshop),Worker-9,Supervisor-7,2025-01-09T04:00:00,2025-01-09T06:17:03.898502,Closed,True,True
+PTW-1028,Chemical Handling,Zone-A (Coke Oven),Worker-4,Supervisor-9,2025-01-19T21:00:00,2025-01-20T03:51:07.895144,Active,True,True
+PTW-1029,Height Work,Zone-D (Workshop),Worker-14,Supervisor-7,2025-01-18T08:00:00,2025-01-18T15:19:01.560211,Active,False,True
+PTW-1030,Electrical Isolation,Zone-D (Workshop),Worker-19,Supervisor-7,2025-01-17T15:00:00,2025-01-17T20:52:34.105891,Suspended,False,True
+PTW-1031,Electrical Isolation,Zone-B (Blast Furnace),Worker-4,Supervisor-10,2025-01-09T02:00:00,2025-01-09T08:09:00.576905,Active,True,True
+PTW-1032,Chemical Handling,Zone-D (Workshop),Worker-33,Supervisor-9,2025-01-03T03:00:00,2025-01-03T05:06:07.304744,Suspended,True,True
+PTW-1033,Chemical Handling,Zone-A (Coke Oven),Worker-44,Supervisor-4,2025-01-03T22:00:00,2025-01-04T01:49:35.143893,Suspended,True,False
+PTW-1034,Hot Work,Zone-A (Coke Oven),Worker-27,Supervisor-10,2025-01-26T08:00:00,2025-01-26T12:57:23.718481,Active,True,True
+PTW-1035,Electrical Isolation,Zone-B (Blast Furnace),Worker-17,Supervisor-7,2025-01-29T13:00:00,2025-01-29T14:54:58.132710,Active,False,True
+PTW-1036,Hot Work,Zone-A (Coke Oven),Worker-30,Supervisor-10,2025-02-02T01:00:00,2025-02-02T08:59:21.051910,Active,True,False
+PTW-1037,Chemical Handling,Zone-C (Oxygen Plant),Worker-9,Supervisor-6,2025-01-10T02:00:00,2025-01-10T09:09:57.777177,Active,True,True
+PTW-1038,Height Work,Zone-C (Oxygen Plant),Worker-40,Supervisor-9,2025-01-07T17:00:00,2025-01-07T18:03:17.142300,Suspended,True,False
+PTW-1039,Confined Space Entry,Zone-C (Oxygen Plant),Worker-8,Supervisor-2,2025-01-05T10:00:00,2025-01-05T16:11:48.900436,Active,True,True
+PTW-1040,Confined Space Entry,Zone-C (Oxygen Plant),Worker-14,Supervisor-5,2025-01-26T19:00:00,2025-01-26T23:32:16.308264,Active,True,True
+PTW-1041,Height Work,Zone-C (Oxygen Plant),Worker-3,Supervisor-1,2025-01-28T01:00:00,2025-01-28T04:20:05.624773,Active,True,True
+PTW-1042,Height Work,Zone-D (Workshop),Worker-36,Supervisor-1,2025-02-01T15:00:00,2025-02-01T16:46:59.221791,Active,True,True
+PTW-1043,Chemical Handling,Zone-B (Blast Furnace),Worker-28,Supervisor-3,2025-01-25T20:00:00,2025-01-25T21:17:34.087226,Active,True,True
+PTW-1044,Confined Space Entry,Zone-A (Coke Oven),Worker-23,Supervisor-9,2025-01-09T23:00:00,2025-01-10T06:11:20.194477,Closed,True,True
+PTW-1045,Confined Space Entry,Zone-B (Blast Furnace),Worker-27,Supervisor-1,2025-02-06T21:00:00,2025-02-06T23:15:19.888718,Active,False,False
+PTW-1046,Confined Space Entry,Zone-C (Oxygen Plant),Worker-11,Supervisor-2,2025-02-06T20:00:00,2025-02-06T23:40:40.051409,Active,False,True
+PTW-1047,Height Work,Zone-C (Oxygen Plant),Worker-20,Supervisor-4,2025-01-09T12:00:00,2025-01-09T14:33:37.673390,Active,False,True
+PTW-1048,Hot Work,Zone-C (Oxygen Plant),Worker-23,Supervisor-9,2025-01-12T21:00:00,2025-01-13T00:47:51.895286,Suspended,True,True
+PTW-1049,Electrical Isolation,Zone-B (Blast Furnace),Worker-38,Supervisor-5,2025-01-05T22:00:00,2025-01-05T23:16:04.081373,Suspended,False,True
+PTW-1050,Electrical Isolation,Zone-D (Workshop),Worker-39,Supervisor-9,2025-02-01T02:00:00,2025-02-01T03:48:34.273758,Suspended,True,True
+PTW-1051,Height Work,Zone-A (Coke Oven),Worker-34,Supervisor-9,2025-01-02T21:00:00,2025-01-03T02:48:28.800102,Active,True,True
+PTW-1052,Electrical Isolation,Zone-C (Oxygen Plant),Worker-43,Supervisor-2,2025-01-03T23:00:00,2025-01-04T05:02:17.807428,Active,True,False
+PTW-1053,Electrical Isolation,Zone-D (Workshop),Worker-45,Supervisor-5,2025-01-18T10:00:00,2025-01-18T14:52:51.194437,Active,False,False
+PTW-1054,Confined Space Entry,Zone-C (Oxygen Plant),Worker-26,Supervisor-9,2025-01-17T04:00:00,2025-01-17T10:50:09.874266,Active,True,True
+PTW-1055,Chemical Handling,Zone-C (Oxygen Plant),Worker-30,Supervisor-8,2025-01-19T08:00:00,2025-01-19T12:05:42.426942,Active,False,False
+PTW-1056,Hot Work,Zone-C (Oxygen Plant),Worker-33,Supervisor-10,2025-01-08T05:00:00,2025-01-08T08:20:46.744036,Active,True,True
+PTW-1057,Confined Space Entry,Zone-B (Blast Furnace),Worker-2,Supervisor-1,2025-02-04T09:00:00,2025-02-04T11:42:50.032111,Closed,True,True
+PTW-1058,Chemical Handling,Zone-B (Blast Furnace),Worker-46,Supervisor-7,2025-01-18T16:00:00,2025-01-18T20:27:38.304659,Active,True,False
+PTW-1059,Hot Work,Zone-A (Coke Oven),Worker-50,Supervisor-7,2025-01-30T08:00:00,2025-01-30T10:31:54.796648,Suspended,False,True
+PTW-1060,Confined Space Entry,Zone-A (Coke Oven),Worker-30,Supervisor-3,2025-01-24T18:00:00,2025-01-25T00:36:35.698363,Suspended,True,True
+PTW-1061,Chemical Handling,Zone-D (Workshop),Worker-36,Supervisor-8,2025-01-27T03:00:00,2025-01-27T10:16:49.644201,Closed,False,True
+PTW-1062,Confined Space Entry,Zone-C (Oxygen Plant),Worker-50,Supervisor-9,2025-02-02T01:00:00,2025-02-02T05:23:31.844830,Active,True,True
+PTW-1063,Electrical Isolation,Zone-B (Blast Furnace),Worker-18,Supervisor-6,2025-01-04T07:00:00,2025-01-04T10:14:16.681124,Suspended,True,True
+PTW-1064,Confined Space Entry,Zone-D (Workshop),Worker-45,Supervisor-3,2025-01-07T10:00:00,2025-01-07T15:56:41.762371,Active,False,True
+PTW-1065,Chemical Handling,Zone-D (Workshop),Worker-27,Supervisor-1,2025-01-15T02:00:00,2025-01-15T04:26:52.226616,Closed,False,False
+PTW-1066,Hot Work,Zone-D (Workshop),Worker-31,Supervisor-1,2025-01-30T16:00:00,2025-01-30T23:35:57.089767,Active,False,True
+PTW-1067,Chemical Handling,Zone-B (Blast Furnace),Worker-32,Supervisor-4,2025-01-23T23:00:00,2025-01-24T01:54:37.969856,Closed,True,True
+PTW-1068,Height Work,Zone-B (Blast Furnace),Worker-30,Supervisor-3,2025-01-15T08:00:00,2025-01-15T15:51:54.193833,Suspended,True,True
+PTW-1069,Chemical Handling,Zone-A (Coke Oven),Worker-6,Supervisor-7,2025-01-26T06:00:00,2025-01-26T07:56:59.627078,Closed,True,True
+PTW-1070,Height Work,Zone-C (Oxygen Plant),Worker-14,Supervisor-8,2025-01-12T02:00:00,2025-01-12T05:17:16.514283,Closed,True,True
+PTW-1071,Hot Work,Zone-D (Workshop),Worker-2,Supervisor-9,2025-01-11T18:00:00,2025-01-11T19:21:52.557328,Active,True,False
+PTW-1072,Hot Work,Zone-A (Coke Oven),Worker-16,Supervisor-4,2025-01-03T22:00:00,2025-01-04T04:52:28.566926,Suspended,True,True
+PTW-1073,Height Work,Zone-A (Coke Oven),Worker-37,Supervisor-4,2025-01-06T09:00:00,2025-01-06T13:15:18.856383,Active,True,True
+PTW-1074,Chemical Handling,Zone-A (Coke Oven),Worker-50,Supervisor-3,2025-01-26T20:00:00,2025-01-27T03:45:10.963480,Active,True,True
+PTW-1075,Height Work,Zone-D (Workshop),Worker-46,Supervisor-4,2025-01-25T13:00:00,2025-01-25T14:31:55.111242,Active,True,False
+PTW-1076,Electrical Isolation,Zone-A (Coke Oven),Worker-37,Supervisor-1,2025-02-02T23:00:00,2025-02-03T02:25:49.534886,Closed,True,True
+PTW-1077,Electrical Isolation,Zone-A (Coke Oven),Worker-27,Supervisor-8,2025-01-22T14:00:00,2025-01-22T15:44:19.579540,Active,False,False
+PTW-1078,Height Work,Zone-B (Blast Furnace),Worker-47,Supervisor-9,2025-01-07T12:00:00,2025-01-07T19:45:29.938027,Active,False,True
+PTW-1079,Chemical Handling,Zone-C (Oxygen Plant),Worker-21,Supervisor-4,2025-01-19T14:00:00,2025-01-19T20:48:54.421676,Active,True,True
+PTW-1080,Height Work,Zone-D (Workshop),Worker-22,Supervisor-1,2025-01-11T09:00:00,2025-01-11T13:27:36.523891,Active,True,True
+PTW-1081,Electrical Isolation,Zone-C (Oxygen Plant),Worker-22,Supervisor-5,2025-01-10T01:00:00,2025-01-10T08:09:44.063490,Active,True,False
+PTW-1082,Hot Work,Zone-B (Blast Furnace),Worker-47,Supervisor-7,2025-01-09T03:00:00,2025-01-09T07:25:12.161741,Active,False,False
+PTW-1083,Height Work,Zone-D (Workshop),Worker-2,Supervisor-2,2025-01-31T08:00:00,2025-01-31T11:03:34.736649,Closed,True,True
+PTW-1084,Chemical Handling,Zone-C (Oxygen Plant),Worker-31,Supervisor-9,2025-01-29T07:00:00,2025-01-29T11:42:59.232665,Closed,True,True
+PTW-1085,Height Work,Zone-C (Oxygen Plant),Worker-20,Supervisor-5,2025-01-30T23:00:00,2025-01-31T01:36:49.558641,Active,True,True
+PTW-1086,Chemical Handling,Zone-B (Blast Furnace),Worker-13,Supervisor-4,2025-02-01T16:00:00,2025-02-01T22:10:12.837268,Active,True,True
+PTW-1087,Confined Space Entry,Zone-C (Oxygen Plant),Worker-15,Supervisor-6,2025-02-05T12:00:00,2025-02-05T14:15:21.926901,Active,True,True
+PTW-1088,Hot Work,Zone-C (Oxygen Plant),Worker-45,Supervisor-3,2025-01-02T22:00:00,2025-01-03T03:27:54.315309,Closed,True,True
+PTW-1089,Electrical Isolation,Zone-D (Workshop),Worker-31,Supervisor-8,2025-01-25T11:00:00,2025-01-25T14:23:05.789501,Active,True,True
+PTW-1090,Hot Work,Zone-D (Workshop),Worker-32,Supervisor-2,2025-01-05T20:00:00,2025-01-06T01:02:20.933143,Active,True,True
+PTW-1091,Chemical Handling,Zone-C (Oxygen Plant),Worker-6,Supervisor-4,2025-02-04T14:00:00,2025-02-04T15:49:44.979368,Closed,True,False
+PTW-1092,Height Work,Zone-D (Workshop),Worker-20,Supervisor-10,2025-01-17T05:00:00,2025-01-17T12:55:48.787764,Active,True,False
+PTW-1093,Hot Work,Zone-B (Blast Furnace),Worker-41,Supervisor-4,2025-02-01T13:00:00,2025-02-01T15:51:09.082357,Active,True,True
+PTW-1094,Chemical Handling,Zone-A (Coke Oven),Worker-11,Supervisor-1,2025-01-08T09:00:00,2025-01-08T12:51:34.642831,Suspended,False,True
+PTW-1095,Confined Space Entry,Zone-C (Oxygen Plant),Worker-46,Supervisor-5,2025-01-02T09:00:00,2025-01-02T14:55:15.286464,Closed,True,False
+PTW-1096,Electrical Isolation,Zone-B (Blast Furnace),Worker-28,Supervisor-2,2025-01-10T23:00:00,2025-01-11T03:48:42.971944,Active,True,True
+PTW-1097,Hot Work,Zone-B (Blast Furnace),Worker-20,Supervisor-10,2025-01-04T01:00:00,2025-01-04T07:14:33.734596,Suspended,True,True
+PTW-1098,Height Work,Zone-C (Oxygen Plant),Worker-45,Supervisor-7,2025-01-06T07:00:00,2025-01-06T14:35:55.441267,Suspended,False,True
+PTW-1099,Chemical Handling,Zone-A (Coke Oven),Worker-28,Supervisor-6,2025-01-04T10:00:00,2025-01-04T15:13:33.583752,Active,True,True
+PTW-1100,Chemical Handling,Zone-A (Coke Oven),Worker-49,Supervisor-5,2025-01-29T18:00:00,2025-01-29T23:02:01.424012,Active,False,False
+PTW-1101,Height Work,Zone-C (Oxygen Plant),Worker-12,Supervisor-10,2025-01-28T19:00:00,2025-01-28T23:03:04.301674,Closed,True,True
+PTW-1102,Height Work,Zone-C (Oxygen Plant),Worker-21,Supervisor-2,2025-01-15T20:00:00,2025-01-16T03:00:14.873979,Active,False,False
+PTW-1103,Electrical Isolation,Zone-D (Workshop),Worker-49,Supervisor-9,2025-01-22T03:00:00,2025-01-22T04:15:24.767684,Active,True,True
+PTW-1104,Hot Work,Zone-D (Workshop),Worker-33,Supervisor-1,2025-01-14T19:00:00,2025-01-15T00:36:13.041739,Suspended,False,True
+PTW-1105,Confined Space Entry,Zone-C (Oxygen Plant),Worker-40,Supervisor-8,2025-01-03T07:00:00,2025-01-03T12:22:40.300302,Active,True,True
+PTW-1106,Confined Space Entry,Zone-C (Oxygen Plant),Worker-29,Supervisor-8,2025-01-24T10:00:00,2025-01-24T11:50:59.937301,Suspended,True,False
+PTW-1107,Electrical Isolation,Zone-A (Coke Oven),Worker-36,Supervisor-7,2025-01-07T18:00:00,2025-01-07T19:39:08.871872,Active,False,True
+PTW-1108,Confined Space Entry,Zone-D (Workshop),Worker-46,Supervisor-5,2025-01-28T15:00:00,2025-01-28T19:33:43.574780,Active,False,True
+PTW-1109,Confined Space Entry,Zone-D (Workshop),Worker-36,Supervisor-3,2025-01-21T03:00:00,2025-01-21T06:41:06.367534,Suspended,True,True
+PTW-1110,Height Work,Zone-C (Oxygen Plant),Worker-33,Supervisor-5,2025-01-12T18:00:00,2025-01-13T00:44:37.846724,Active,True,False
+PTW-1111,Height Work,Zone-B (Blast Furnace),Worker-29,Supervisor-9,2025-01-25T17:00:00,2025-01-25T21:23:25.402916,Active,False,True
+PTW-1112,Confined Space Entry,Zone-B (Blast Furnace),Worker-37,Supervisor-7,2025-01-14T17:00:00,2025-01-14T19:38:05.773641,Closed,True,True
+PTW-1113,Height Work,Zone-D (Workshop),Worker-25,Supervisor-3,2025-02-01T18:00:00,2025-02-01T22:28:02.281970,Active,True,False
+PTW-1114,Electrical Isolation,Zone-A (Coke Oven),Worker-29,Supervisor-2,2025-01-26T04:00:00,2025-01-26T08:40:53.967388,Closed,True,False
+PTW-1115,Height Work,Zone-B (Blast Furnace),Worker-5,Supervisor-8,2025-01-07T03:00:00,2025-01-07T09:28:14.437340,Active,True,False
+PTW-1116,Height Work,Zone-A (Coke Oven),Worker-22,Supervisor-9,2025-01-30T13:00:00,2025-01-30T16:39:36.236818,Active,False,False
+PTW-1117,Chemical Handling,Zone-A (Coke Oven),Worker-16,Supervisor-5,2025-01-02T12:00:00,2025-01-02T19:58:55.133258,Active,False,True
+PTW-1118,Hot Work,Zone-D (Workshop),Worker-11,Supervisor-5,2025-02-02T10:00:00,2025-02-02T17:19:26.286364,Active,True,True
+PTW-1119,Electrical Isolation,Zone-C (Oxygen Plant),Worker-28,Supervisor-3,2025-01-13T12:00:00,2025-01-13T14:42:33.775291,Closed,True,True
+PTW-1120,Hot Work,Zone-D (Workshop),Worker-40,Supervisor-4,2025-01-08T11:00:00,2025-01-08T15:29:01.214760,Suspended,True,True
+PTW-1121,Electrical Isolation,Zone-D (Workshop),Worker-17,Supervisor-1,2025-01-20T16:00:00,2025-01-20T23:17:32.494999,Closed,True,False
+PTW-1122,Confined Space Entry,Zone-A (Coke Oven),Worker-29,Supervisor-6,2025-01-24T07:00:00,2025-01-24T14:54:48.822720,Active,False,False
+PTW-1123,Height Work,Zone-C (Oxygen Plant),Worker-13,Supervisor-7,2025-01-11T16:00:00,2025-01-11T22:58:24.053558,Active,True,True
+PTW-1124,Electrical Isolation,Zone-C (Oxygen Plant),Worker-45,Supervisor-5,2025-01-25T09:00:00,2025-01-25T10:09:12.877866,Closed,True,True
+PTW-1125,Hot Work,Zone-D (Workshop),Worker-19,Supervisor-4,2025-01-25T03:00:00,2025-01-25T08:14:58.037954,Active,True,False
+PTW-1126,Chemical Handling,Zone-C (Oxygen Plant),Worker-44,Supervisor-3,2025-01-09T02:00:00,2025-01-09T07:23:51.852213,Active,True,True
+PTW-1127,Chemical Handling,Zone-C (Oxygen Plant),Worker-47,Supervisor-3,2025-01-02T10:00:00,2025-01-02T11:37:51.361069,Active,True,False
+PTW-1128,Confined Space Entry,Zone-B (Blast Furnace),Worker-9,Supervisor-9,2025-01-18T17:00:00,2025-01-19T00:08:06.807037,Active,True,True
+PTW-1129,Height Work,Zone-C (Oxygen Plant),Worker-48,Supervisor-6,2025-01-11T23:00:00,2025-01-12T05:37:46.659973,Closed,True,True
+PTW-1130,Confined Space Entry,Zone-D (Workshop),Worker-36,Supervisor-6,2025-02-02T04:00:00,2025-02-02T05:37:55.632464,Closed,True,True
+PTW-1131,Hot Work,Zone-D (Workshop),Worker-24,Supervisor-5,2025-01-23T21:00:00,2025-01-24T02:05:30.914310,Active,True,False
+PTW-1132,Height Work,Zone-A (Coke Oven),Worker-40,Supervisor-9,2025-01-10T23:00:00,2025-01-11T02:17:45.758302,Suspended,True,False
+PTW-1133,Height Work,Zone-C (Oxygen Plant),Worker-42,Supervisor-7,2025-01-03T16:00:00,2025-01-03T17:49:00.233606,Active,True,True
+PTW-1134,Hot Work,Zone-A (Coke Oven),Worker-16,Supervisor-9,2025-01-22T00:00:00,2025-01-22T01:56:58.734027,Closed,True,False
+PTW-1135,Chemical Handling,Zone-D (Workshop),Worker-38,Supervisor-3,2025-02-01T16:00:00,2025-02-01T23:11:52.427354,Active,False,False
+PTW-1136,Electrical Isolation,Zone-A (Coke Oven),Worker-45,Supervisor-6,2025-01-18T09:00:00,2025-01-18T11:31:15.196054,Closed,True,True
+PTW-1137,Electrical Isolation,Zone-C (Oxygen Plant),Worker-4,Supervisor-7,2025-01-05T05:00:00,2025-01-05T07:55:52.212310,Active,False,True
+PTW-1138,Confined Space Entry,Zone-A (Coke Oven),Worker-4,Supervisor-6,2025-01-29T06:00:00,2025-01-29T08:42:17.936209,Active,True,True
+PTW-1139,Chemical Handling,Zone-B (Blast Furnace),Worker-38,Supervisor-4,2025-02-05T09:00:00,2025-02-05T15:41:28.935124,Active,True,True
+PTW-1140,Chemical Handling,Zone-A (Coke Oven),Worker-18,Supervisor-3,2025-02-03T15:00:00,2025-02-03T22:54:45.688070,Suspended,True,True
+PTW-1141,Hot Work,Zone-B (Blast Furnace),Worker-1,Supervisor-6,2025-01-05T16:00:00,2025-01-05T22:31:47.613539,Active,True,True
+PTW-1142,Electrical Isolation,Zone-A (Coke Oven),Worker-9,Supervisor-7,2025-01-08T10:00:00,2025-01-08T14:40:57.355270,Active,False,True
+PTW-1143,Electrical Isolation,Zone-A (Coke Oven),Worker-29,Supervisor-9,2025-02-03T04:00:00,2025-02-03T06:33:03.053862,Suspended,True,False
+PTW-1144,Chemical Handling,Zone-C (Oxygen Plant),Worker-30,Supervisor-1,2025-02-03T10:00:00,2025-02-03T11:25:32.800269,Closed,False,True
+PTW-1145,Hot Work,Zone-D (Workshop),Worker-46,Supervisor-8,2025-01-30T06:00:00,2025-01-30T07:30:51.966037,Active,True,False
+PTW-1146,Hot Work,Zone-B (Blast Furnace),Worker-18,Supervisor-10,2025-01-07T07:00:00,2025-01-07T12:25:53.533452,Suspended,True,True
+PTW-1147,Chemical Handling,Zone-C (Oxygen Plant),Worker-30,Supervisor-9,2025-01-26T11:00:00,2025-01-26T16:14:16.755147,Active,True,False
+PTW-1148,Chemical Handling,Zone-B (Blast Furnace),Worker-28,Supervisor-8,2025-01-28T18:00:00,2025-01-29T01:12:59.893754,Closed,True,True
+PTW-1149,Height Work,Zone-A (Coke Oven),Worker-21,Supervisor-7,2025-01-18T00:00:00,2025-01-18T03:11:15.593993,Active,True,True
+PTW-1150,Height Work,Zone-A (Coke Oven),Worker-6,Supervisor-2,2025-01-30T07:00:00,2025-01-30T08:39:09.398563,Active,True,True
+PTW-1151,Hot Work,Zone-C (Oxygen Plant),Worker-43,Supervisor-2,2025-01-24T17:00:00,2025-01-24T20:52:32.377550,Closed,True,True
+PTW-1152,Electrical Isolation,Zone-C (Oxygen Plant),Worker-7,Supervisor-10,2025-01-26T14:00:00,2025-01-26T18:33:06.796184,Active,False,True
+PTW-1153,Hot Work,Zone-C (Oxygen Plant),Worker-36,Supervisor-6,2025-02-06T03:00:00,2025-02-06T04:48:15.109901,Active,True,True
+PTW-1154,Chemical Handling,Zone-A (Coke Oven),Worker-39,Supervisor-5,2025-02-06T01:00:00,2025-02-06T02:12:09.620163,Active,True,True
+PTW-1155,Hot Work,Zone-B (Blast Furnace),Worker-10,Supervisor-10,2025-01-15T23:00:00,2025-01-16T04:36:05.084798,Active,True,False
+PTW-1156,Hot Work,Zone-A (Coke Oven),Worker-48,Supervisor-9,2025-01-28T00:00:00,2025-01-28T02:30:21.348577,Closed,False,True
+PTW-1157,Electrical Isolation,Zone-C (Oxygen Plant),Worker-47,Supervisor-6,2025-01-07T17:00:00,2025-01-07T23:26:16.257623,Suspended,True,True
+PTW-1158,Confined Space Entry,Zone-A (Coke Oven),Worker-44,Supervisor-2,2025-01-07T15:00:00,2025-01-07T17:54:16.991657,Closed,False,False
+PTW-1159,Height Work,Zone-C (Oxygen Plant),Worker-14,Supervisor-9,2025-01-19T20:00:00,2025-01-19T21:47:48.201204,Closed,True,True
+PTW-1160,Chemical Handling,Zone-D (Workshop),Worker-34,Supervisor-5,2025-01-29T22:00:00,2025-01-29T23:19:04.517538,Closed,True,True
+PTW-1161,Electrical Isolation,Zone-B (Blast Furnace),Worker-50,Supervisor-3,2025-01-09T17:00:00,2025-01-09T23:20:56.854573,Active,True,True
+PTW-1162,Height Work,Zone-D (Workshop),Worker-12,Supervisor-3,2025-01-01T07:00:00,2025-01-01T10:39:41.227632,Active,True,True
+PTW-1163,Hot Work,Zone-D (Workshop),Worker-2,Supervisor-8,2025-01-17T22:00:00,2025-01-18T05:26:53.293349,Active,False,False
+PTW-1164,Height Work,Zone-C (Oxygen Plant),Worker-8,Supervisor-7,2025-01-18T06:00:00,2025-01-18T07:08:45.585287,Active,True,False
+PTW-1165,Electrical Isolation,Zone-A (Coke Oven),Worker-28,Supervisor-2,2025-01-20T15:00:00,2025-01-20T17:42:11.575166,Suspended,False,False
+PTW-1166,Height Work,Zone-C (Oxygen Plant),Worker-48,Supervisor-6,2025-01-04T08:00:00,2025-01-04T10:33:03.615884,Active,True,False
+PTW-1167,Hot Work,Zone-B (Blast Furnace),Worker-50,Supervisor-6,2025-01-28T00:00:00,2025-01-28T03:27:27.713321,Active,True,True
+PTW-1168,Electrical Isolation,Zone-B (Blast Furnace),Worker-12,Supervisor-10,2025-01-07T05:00:00,2025-01-07T07:04:12.318683,Active,True,False
+PTW-1169,Height Work,Zone-D (Workshop),Worker-44,Supervisor-10,2025-01-22T01:00:00,2025-01-22T06:30:03.394133,Suspended,True,False
+PTW-1170,Confined Space Entry,Zone-D (Workshop),Worker-5,Supervisor-8,2025-01-14T11:00:00,2025-01-14T15:05:43.643209,Active,True,False
+PTW-1171,Electrical Isolation,Zone-A (Coke Oven),Worker-20,Supervisor-8,2025-01-03T09:00:00,2025-01-03T13:09:48.229365,Active,True,True
+PTW-1172,Hot Work,Zone-D (Workshop),Worker-30,Supervisor-10,2025-01-04T06:00:00,2025-01-04T10:52:48.772558,Active,False,False
+PTW-1173,Confined Space Entry,Zone-C (Oxygen Plant),Worker-39,Supervisor-8,2025-01-28T19:00:00,2025-01-28T23:30:34.456007,Active,False,True
+PTW-1174,Electrical Isolation,Zone-A (Coke Oven),Worker-33,Supervisor-3,2025-02-04T14:00:00,2025-02-04T15:16:26.381580,Closed,False,False
+PTW-1175,Chemical Handling,Zone-B (Blast Furnace),Worker-24,Supervisor-6,2025-01-23T07:00:00,2025-01-23T14:25:32.007086,Closed,False,True
+PTW-1176,Chemical Handling,Zone-A (Coke Oven),Worker-41,Supervisor-6,2025-01-29T23:00:00,2025-01-30T00:27:40.978728,Active,False,True
+PTW-1177,Chemical Handling,Zone-B (Blast Furnace),Worker-22,Supervisor-2,2025-01-11T18:00:00,2025-01-11T23:04:45.035768,Active,True,True
+PTW-1178,Height Work,Zone-B (Blast Furnace),Worker-39,Supervisor-2,2025-01-28T23:00:00,2025-01-29T02:10:01.463563,Closed,True,True
+PTW-1179,Chemical Handling,Zone-A (Coke Oven),Worker-42,Supervisor-7,2025-01-29T14:00:00,2025-01-29T18:33:33.909858,Active,True,True
+PTW-1180,Confined Space Entry,Zone-C (Oxygen Plant),Worker-50,Supervisor-8,2025-01-08T16:00:00,2025-01-08T18:20:38.531888,Active,True,True
+PTW-1181,Hot Work,Zone-A (Coke Oven),Worker-43,Supervisor-6,2025-01-13T14:00:00,2025-01-13T21:08:05.097868,Suspended,True,False
+PTW-1182,Confined Space Entry,Zone-B (Blast Furnace),Worker-12,Supervisor-10,2025-01-17T01:00:00,2025-01-17T07:39:47.901735,Active,False,True
+PTW-1183,Electrical Isolation,Zone-B (Blast Furnace),Worker-29,Supervisor-10,2025-01-18T12:00:00,2025-01-18T14:59:40.183901,Closed,True,False
+PTW-1184,Electrical Isolation,Zone-D (Workshop),Worker-13,Supervisor-6,2025-01-11T04:00:00,2025-01-11T09:44:53.331992,Suspended,False,True
+PTW-1185,Electrical Isolation,Zone-D (Workshop),Worker-33,Supervisor-9,2025-02-02T19:00:00,2025-02-02T22:55:50.252834,Active,True,False
+PTW-1186,Electrical Isolation,Zone-A (Coke Oven),Worker-42,Supervisor-8,2025-01-06T21:00:00,2025-01-07T04:07:07.747015,Suspended,True,False
+PTW-1187,Chemical Handling,Zone-A (Coke Oven),Worker-19,Supervisor-2,2025-02-06T02:00:00,2025-02-06T08:20:30.544123,Active,False,False
+PTW-1188,Height Work,Zone-A (Coke Oven),Worker-15,Supervisor-8,2025-01-07T06:00:00,2025-01-07T13:11:32.670298,Active,False,True
+PTW-1189,Chemical Handling,Zone-C (Oxygen Plant),Worker-16,Supervisor-7,2025-01-17T21:00:00,2025-01-18T04:57:42.038851,Active,True,True
+PTW-1190,Hot Work,Zone-C (Oxygen Plant),Worker-10,Supervisor-3,2025-01-14T14:00:00,2025-01-14T15:16:05.240416,Closed,True,False
+PTW-1191,Height Work,Zone-A (Coke Oven),Worker-6,Supervisor-1,2025-01-21T00:00:00,2025-01-21T02:47:29.282997,Active,False,True
+PTW-1192,Electrical Isolation,Zone-B (Blast Furnace),Worker-20,Supervisor-2,2025-02-03T02:00:00,2025-02-03T03:20:03.286055,Closed,False,True
+PTW-1193,Height Work,Zone-A (Coke Oven),Worker-41,Supervisor-9,2025-01-05T17:00:00,2025-01-05T22:01:31.195930,Active,True,True
+PTW-1194,Chemical Handling,Zone-C (Oxygen Plant),Worker-16,Supervisor-10,2025-01-01T01:00:00,2025-01-01T04:54:57.503399,Active,True,True
+PTW-1195,Chemical Handling,Zone-A (Coke Oven),Worker-25,Supervisor-8,2025-01-23T10:00:00,2025-01-23T11:18:17.067514,Closed,True,True
+PTW-1196,Hot Work,Zone-C (Oxygen Plant),Worker-5,Supervisor-6,2025-02-01T21:00:00,2025-02-01T23:41:16.373295,Active,True,True
+PTW-1197,Electrical Isolation,Zone-C (Oxygen Plant),Worker-42,Supervisor-3,2025-01-02T21:00:00,2025-01-03T03:48:45.668150,Closed,False,False
+PTW-1198,Confined Space Entry,Zone-A (Coke Oven),Worker-46,Supervisor-8,2025-01-08T18:00:00,2025-01-08T19:15:31.991513,Active,True,True
+PTW-1199,Electrical Isolation,Zone-C (Oxygen Plant),Worker-33,Supervisor-7,2025-01-02T18:00:00,2025-01-03T01:55:25.892098,Suspended,False,True
+PTW-1200,Confined Space Entry,Zone-C (Oxygen Plant),Worker-23,Supervisor-1,2025-01-02T13:00:00,2025-01-02T20:03:38.116582,Active,True,True
+PTW-1201,Electrical Isolation,Zone-D (Workshop),Worker-26,Supervisor-8,2025-02-04T02:00:00,2025-02-04T09:15:44.864873,Closed,True,True
+PTW-1202,Height Work,Zone-C (Oxygen Plant),Worker-34,Supervisor-5,2025-01-22T04:00:00,2025-01-22T10:36:28.931803,Closed,True,True
+PTW-1203,Confined Space Entry,Zone-C (Oxygen Plant),Worker-21,Supervisor-2,2025-01-26T16:00:00,2025-01-26T17:33:37.736559,Active,True,True
+PTW-1204,Height Work,Zone-B (Blast Furnace),Worker-45,Supervisor-8,2025-01-26T17:00:00,2025-01-26T20:27:38.983991,Active,True,False
+PTW-1205,Electrical Isolation,Zone-A (Coke Oven),Worker-5,Supervisor-7,2025-01-19T13:00:00,2025-01-19T16:32:35.440492,Active,True,True
+PTW-1206,Chemical Handling,Zone-D (Workshop),Worker-3,Supervisor-3,2025-02-06T05:00:00,2025-02-06T06:28:14.280749,Active,True,True
+PTW-1207,Hot Work,Zone-B (Blast Furnace),Worker-44,Supervisor-8,2025-01-25T04:00:00,2025-01-25T11:38:30.352937,Active,False,True
+PTW-1208,Confined Space Entry,Zone-C (Oxygen Plant),Worker-26,Supervisor-6,2025-01-25T11:00:00,2025-01-25T16:32:48.930565,Active,True,True
+PTW-1209,Confined Space Entry,Zone-D (Workshop),Worker-34,Supervisor-7,2025-02-01T09:00:00,2025-02-01T16:23:41.271146,Active,True,True
+PTW-1210,Height Work,Zone-B (Blast Furnace),Worker-40,Supervisor-5,2025-01-31T00:00:00,2025-01-31T05:51:28.312154,Closed,True,True
+PTW-1211,Hot Work,Zone-D (Workshop),Worker-12,Supervisor-8,2025-01-06T18:00:00,2025-01-07T01:58:51.012581,Active,True,False
+PTW-1212,Chemical Handling,Zone-C (Oxygen Plant),Worker-20,Supervisor-3,2025-01-03T18:00:00,2025-01-03T23:58:57.589421,Active,True,False
+PTW-1213,Hot Work,Zone-B (Blast Furnace),Worker-9,Supervisor-4,2025-01-10T13:00:00,2025-01-10T19:31:57.401132,Active,True,False
+PTW-1214,Electrical Isolation,Zone-D (Workshop),Worker-36,Supervisor-3,2025-01-25T10:00:00,2025-01-25T15:17:01.098738,Active,True,True
+PTW-1215,Height Work,Zone-D (Workshop),Worker-50,Supervisor-7,2025-01-17T23:00:00,2025-01-18T05:45:48.152868,Active,True,True
+PTW-1216,Hot Work,Zone-D (Workshop),Worker-30,Supervisor-9,2025-01-28T09:00:00,2025-01-28T12:24:41.772474,Suspended,True,True
+PTW-1217,Chemical Handling,Zone-A (Coke Oven),Worker-8,Supervisor-9,2025-01-19T11:00:00,2025-01-19T13:04:15.989764,Active,True,True
+PTW-1218,Confined Space Entry,Zone-C (Oxygen Plant),Worker-34,Supervisor-5,2025-01-31T06:00:00,2025-01-31T12:55:17.529395,Active,True,False
+PTW-1219,Electrical Isolation,Zone-B (Blast Furnace),Worker-41,Supervisor-5,2025-01-24T12:00:00,2025-01-24T17:18:03.592613,Active,True,False
+PTW-1220,Confined Space Entry,Zone-B (Blast Furnace),Worker-43,Supervisor-10,2025-01-25T18:00:00,2025-01-26T00:02:39.945765,Suspended,True,False
+PTW-1221,Hot Work,Zone-A (Coke Oven),Worker-3,Supervisor-10,2025-01-02T18:00:00,2025-01-02T20:51:09.328877,Active,False,False
+PTW-1222,Hot Work,Zone-D (Workshop),Worker-41,Supervisor-9,2025-01-28T06:00:00,2025-01-28T09:01:39.725751,Active,False,True
+PTW-1223,Height Work,Zone-C (Oxygen Plant),Worker-30,Supervisor-2,2025-02-04T08:00:00,2025-02-04T13:49:13.062006,Active,False,True
+PTW-1224,Height Work,Zone-B (Blast Furnace),Worker-22,Supervisor-10,2025-01-21T15:00:00,2025-01-21T17:00:20.451017,Active,True,True
+PTW-1225,Electrical Isolation,Zone-A (Coke Oven),Worker-21,Supervisor-4,2025-01-06T13:00:00,2025-01-06T17:15:55.108689,Active,False,True
+PTW-1226,Hot Work,Zone-A (Coke Oven),Worker-19,Supervisor-7,2025-01-07T00:00:00,2025-01-07T07:02:56.929029,Closed,True,True
+PTW-1227,Electrical Isolation,Zone-C (Oxygen Plant),Worker-13,Supervisor-3,2025-02-04T17:00:00,2025-02-04T21:29:16.291660,Suspended,False,True
+PTW-1228,Electrical Isolation,Zone-D (Workshop),Worker-2,Supervisor-2,2025-02-07T12:00:00,2025-02-07T19:36:59.866663,Suspended,False,True
+PTW-1229,Chemical Handling,Zone-C (Oxygen Plant),Worker-4,Supervisor-1,2025-01-10T04:00:00,2025-01-10T06:58:10.179727,Suspended,False,True
+PTW-1230,Hot Work,Zone-A (Coke Oven),Worker-28,Supervisor-3,2025-01-23T21:00:00,2025-01-24T04:10:37.884419,Active,False,True
+PTW-1231,Height Work,Zone-A (Coke Oven),Worker-37,Supervisor-9,2025-01-02T22:00:00,2025-01-03T00:21:45.313608,Suspended,True,True
+PTW-1232,Chemical Handling,Zone-D (Workshop),Worker-49,Supervisor-9,2025-01-17T11:00:00,2025-01-17T13:57:28.961076,Suspended,True,True
+PTW-1233,Height Work,Zone-C (Oxygen Plant),Worker-22,Supervisor-9,2025-01-05T03:00:00,2025-01-05T10:34:21.503887,Active,True,False
+PTW-1234,Height Work,Zone-A (Coke Oven),Worker-3,Supervisor-1,2025-01-22T17:00:00,2025-01-22T18:57:33.316614,Active,False,False
+PTW-1235,Confined Space Entry,Zone-B (Blast Furnace),Worker-21,Supervisor-10,2025-01-20T11:00:00,2025-01-20T14:13:46.956800,Closed,True,False
+PTW-1236,Chemical Handling,Zone-D (Workshop),Worker-46,Supervisor-10,2025-01-15T08:00:00,2025-01-15T11:05:54.722231,Active,True,True
+PTW-1237,Hot Work,Zone-D (Workshop),Worker-38,Supervisor-5,2025-01-29T17:00:00,2025-01-29T23:34:38.221311,Active,False,True
+PTW-1238,Chemical Handling,Zone-B (Blast Furnace),Worker-47,Supervisor-1,2025-01-28T23:00:00,2025-01-29T04:05:04.786582,Active,False,True
+PTW-1239,Confined Space Entry,Zone-A (Coke Oven),Worker-37,Supervisor-2,2025-02-05T01:00:00,2025-02-05T03:20:07.765061,Closed,True,True
+PTW-1240,Height Work,Zone-B (Blast Furnace),Worker-27,Supervisor-9,2025-01-07T11:00:00,2025-01-07T17:25:29.302006,Closed,True,False
+PTW-1241,Chemical Handling,Zone-B (Blast Furnace),Worker-36,Supervisor-6,2025-01-06T21:00:00,2025-01-07T04:59:12.696284,Closed,False,True
+PTW-1242,Height Work,Zone-C (Oxygen Plant),Worker-35,Supervisor-6,2025-01-08T09:00:00,2025-01-08T14:43:51.888129,Active,False,True
+PTW-1243,Electrical Isolation,Zone-C (Oxygen Plant),Worker-15,Supervisor-5,2025-01-11T12:00:00,2025-01-11T18:23:53.591581,Active,False,True
+PTW-1244,Electrical Isolation,Zone-C (Oxygen Plant),Worker-19,Supervisor-2,2025-01-21T11:00:00,2025-01-21T16:00:51.615458,Suspended,False,True
+PTW-1245,Electrical Isolation,Zone-B (Blast Furnace),Worker-19,Supervisor-1,2025-02-04T22:00:00,2025-02-05T01:00:48.284609,Active,True,True
+PTW-1246,Electrical Isolation,Zone-D (Workshop),Worker-14,Supervisor-4,2025-01-28T23:00:00,2025-01-29T05:47:44.382928,Active,True,True
+PTW-1247,Chemical Handling,Zone-B (Blast Furnace),Worker-16,Supervisor-1,2025-01-05T15:00:00,2025-01-05T20:41:19.815915,Suspended,True,False
+PTW-1248,Hot Work,Zone-A (Coke Oven),Worker-27,Supervisor-6,2025-01-10T22:00:00,2025-01-11T04:01:17.423018,Active,True,True
+PTW-1249,Confined Space Entry,Zone-D (Workshop),Worker-42,Supervisor-8,2025-01-24T11:00:00,2025-01-24T15:20:31.702715,Active,True,True
+PTW-1250,Hot Work,Zone-A (Coke Oven),Worker-42,Supervisor-10,2025-01-13T04:00:00,2025-01-13T06:37:31.949020,Active,True,True
+PTW-1251,Confined Space Entry,Zone-A (Coke Oven),Worker-26,Supervisor-8,2025-02-05T17:00:00,2025-02-05T19:18:15.053124,Active,True,True
+PTW-1252,Chemical Handling,Zone-A (Coke Oven),Worker-22,Supervisor-5,2025-01-13T17:00:00,2025-01-13T21:10:49.596770,Suspended,False,True
+PTW-1253,Chemical Handling,Zone-D (Workshop),Worker-18,Supervisor-4,2025-02-06T07:00:00,2025-02-06T13:39:42.109732,Active,True,False
+PTW-1254,Electrical Isolation,Zone-B (Blast Furnace),Worker-1,Supervisor-6,2025-01-20T13:00:00,2025-01-20T19:32:07.345144,Suspended,True,True
+PTW-1255,Height Work,Zone-D (Workshop),Worker-33,Supervisor-6,2025-01-27T01:00:00,2025-01-27T02:36:25.791800,Active,True,True
+PTW-1256,Electrical Isolation,Zone-B (Blast Furnace),Worker-1,Supervisor-5,2025-01-21T08:00:00,2025-01-21T11:41:06.074645,Closed,True,True
+PTW-1257,Chemical Handling,Zone-A (Coke Oven),Worker-17,Supervisor-6,2025-01-13T21:00:00,2025-01-14T02:50:57.768479,Active,True,True
+PTW-1258,Confined Space Entry,Zone-D (Workshop),Worker-44,Supervisor-9,2025-01-14T02:00:00,2025-01-14T09:27:42.271551,Active,True,False
+PTW-1259,Electrical Isolation,Zone-B (Blast Furnace),Worker-15,Supervisor-3,2025-01-13T14:00:00,2025-01-13T18:20:50.183873,Closed,True,True
+PTW-1260,Chemical Handling,Zone-D (Workshop),Worker-49,Supervisor-9,2025-01-30T22:00:00,2025-01-31T04:36:50.273793,Active,True,False
+PTW-1261,Chemical Handling,Zone-A (Coke Oven),Worker-34,Supervisor-8,2025-02-02T04:00:00,2025-02-02T08:41:49.962727,Active,True,False
+PTW-1262,Hot Work,Zone-B (Blast Furnace),Worker-37,Supervisor-9,2025-01-05T18:00:00,2025-01-05T20:02:56.280011,Active,False,True
+PTW-1263,Confined Space Entry,Zone-D (Workshop),Worker-6,Supervisor-9,2025-01-30T00:00:00,2025-01-30T04:07:06.163843,Active,False,True
+PTW-1264,Height Work,Zone-D (Workshop),Worker-37,Supervisor-1,2025-01-22T21:00:00,2025-01-23T01:54:41.689415,Active,True,True
+PTW-1265,Hot Work,Zone-B (Blast Furnace),Worker-38,Supervisor-2,2025-01-11T20:00:00,2025-01-11T21:19:01.303029,Active,True,False
+PTW-1266,Hot Work,Zone-D (Workshop),Worker-3,Supervisor-5,2025-01-03T13:00:00,2025-01-03T16:51:43.446783,Active,False,True
+PTW-1267,Height Work,Zone-D (Workshop),Worker-25,Supervisor-2,2025-01-17T07:00:00,2025-01-17T12:46:44.804923,Suspended,True,False
+PTW-1268,Electrical Isolation,Zone-A (Coke Oven),Worker-12,Supervisor-9,2025-02-06T16:00:00,2025-02-06T19:45:05.077521,Active,True,True
+PTW-1269,Hot Work,Zone-C (Oxygen Plant),Worker-30,Supervisor-9,2025-02-02T06:00:00,2025-02-02T09:58:08.026349,Closed,True,True
+PTW-1270,Electrical Isolation,Zone-B (Blast Furnace),Worker-18,Supervisor-4,2025-01-20T15:00:00,2025-01-20T22:33:42.741101,Active,True,False
+PTW-1271,Chemical Handling,Zone-A (Coke Oven),Worker-16,Supervisor-4,2025-01-18T21:00:00,2025-01-18T22:28:15.730753,Suspended,True,True
+PTW-1272,Hot Work,Zone-B (Blast Furnace),Worker-48,Supervisor-1,2025-01-26T12:00:00,2025-01-26T15:48:57.086840,Active,True,True
+PTW-1273,Chemical Handling,Zone-C (Oxygen Plant),Worker-15,Supervisor-10,2025-01-06T23:00:00,2025-01-07T02:13:56.373149,Suspended,True,True
+PTW-1274,Confined Space Entry,Zone-B (Blast Furnace),Worker-27,Supervisor-5,2025-01-13T21:00:00,2025-01-13T23:55:33.878797,Suspended,True,False
+PTW-1275,Height Work,Zone-D (Workshop),Worker-4,Supervisor-6,2025-01-29T23:00:00,2025-01-30T06:35:27.977528,Closed,True,False
+PTW-1276,Height Work,Zone-B (Blast Furnace),Worker-20,Supervisor-7,2025-01-18T18:00:00,2025-01-18T20:17:13.750264,Suspended,False,True
+PTW-1277,Confined Space Entry,Zone-C (Oxygen Plant),Worker-46,Supervisor-3,2025-02-06T05:00:00,2025-02-06T11:38:25.559230,Active,False,True
+PTW-1278,Chemical Handling,Zone-B (Blast Furnace),Worker-25,Supervisor-4,2025-01-24T18:00:00,2025-01-24T20:47:05.890269,Active,True,True
+PTW-1279,Electrical Isolation,Zone-A (Coke Oven),Worker-35,Supervisor-4,2025-02-06T03:00:00,2025-02-06T04:21:38.723054,Closed,True,True
+PTW-1280,Chemical Handling,Zone-B (Blast Furnace),Worker-31,Supervisor-4,2025-01-09T00:00:00,2025-01-09T07:05:10.741058,Active,True,True
+PTW-1281,Confined Space Entry,Zone-A (Coke Oven),Worker-48,Supervisor-8,2025-01-10T00:00:00,2025-01-10T07:24:03.920679,Suspended,True,True
+PTW-1282,Chemical Handling,Zone-C (Oxygen Plant),Worker-50,Supervisor-5,2025-01-11T05:00:00,2025-01-11T08:39:52.675958,Suspended,True,True
+PTW-1283,Electrical Isolation,Zone-D (Workshop),Worker-30,Supervisor-2,2025-01-12T03:00:00,2025-01-12T09:37:10.978870,Closed,True,True
+PTW-1284,Electrical Isolation,Zone-D (Workshop),Worker-3,Supervisor-10,2025-01-16T19:00:00,2025-01-17T02:02:54.938005,Active,True,True
+PTW-1285,Chemical Handling,Zone-D (Workshop),Worker-19,Supervisor-3,2025-01-24T14:00:00,2025-01-24T16:22:24.032925,Active,False,False
+PTW-1286,Confined Space Entry,Zone-D (Workshop),Worker-36,Supervisor-6,2025-02-05T13:00:00,2025-02-05T15:48:04.634292,Closed,False,True
+PTW-1287,Electrical Isolation,Zone-B (Blast Furnace),Worker-9,Supervisor-9,2025-01-08T04:00:00,2025-01-08T08:25:05.571296,Suspended,True,False
+PTW-1288,Hot Work,Zone-A (Coke Oven),Worker-49,Supervisor-1,2025-01-02T10:00:00,2025-01-02T13:53:12.284005,Active,True,False
+PTW-1289,Hot Work,Zone-B (Blast Furnace),Worker-33,Supervisor-8,2025-01-07T10:00:00,2025-01-07T13:36:44.657456,Suspended,False,False
+PTW-1290,Hot Work,Zone-A (Coke Oven),Worker-35,Supervisor-9,2025-01-21T19:00:00,2025-01-21T22:52:45.730407,Active,True,False
+PTW-1291,Hot Work,Zone-D (Workshop),Worker-12,Supervisor-2,2025-01-13T05:00:00,2025-01-13T12:25:34.830880,Suspended,True,True
+PTW-1292,Chemical Handling,Zone-C (Oxygen Plant),Worker-23,Supervisor-5,2025-01-09T04:00:00,2025-01-09T10:33:52.395569,Active,True,True
+PTW-1293,Chemical Handling,Zone-B (Blast Furnace),Worker-45,Supervisor-4,2025-01-20T14:00:00,2025-01-20T17:05:59.360937,Active,True,True
+PTW-1294,Height Work,Zone-D (Workshop),Worker-36,Supervisor-8,2025-01-18T07:00:00,2025-01-18T08:23:34.096466,Active,True,True
+PTW-1295,Height Work,Zone-C (Oxygen Plant),Worker-37,Supervisor-2,2025-01-22T07:00:00,2025-01-22T14:15:48.738546,Active,True,True
+PTW-1296,Chemical Handling,Zone-D (Workshop),Worker-18,Supervisor-1,2025-02-07T00:00:00,2025-02-07T07:28:08.813519,Active,True,True
+PTW-1297,Electrical Isolation,Zone-A (Coke Oven),Worker-14,Supervisor-10,2025-02-06T06:00:00,2025-02-06T08:00:33.627344,Closed,True,True
+PTW-1298,Chemical Handling,Zone-B (Blast Furnace),Worker-37,Supervisor-7,2025-01-07T22:00:00,2025-01-08T03:44:21.281140,Suspended,True,True
+PTW-1299,Confined Space Entry,Zone-A (Coke Oven),Worker-33,Supervisor-6,2025-02-02T05:00:00,2025-02-02T06:22:33.150085,Closed,True,True

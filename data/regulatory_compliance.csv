@@ -1,0 +1,9 @@
+regulation,clause,description,compliant
+OISD-116,5.3,Gas detector calibration every 6 months,True
+OISD-116,7.1,PTW system mandatory for hot work,True
+Factory Act 1948,36,Confined space entry procedure documented,False
+DGMS Circular,2024-03,Coke oven gas monitoring 24x7,True
+OISD-GDN-169,4.2,Emergency response drill quarterly,False
+Factory Act 1948,41B,Hazardous process worker health check,True
+PESO,8.1,Pressure vessel inspection annually,True
+OISD-116,9.4,SCADA alarm management procedure in place,False

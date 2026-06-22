@@ -1,0 +1,501 @@
+timestamp,worker_id,zone,latitude,longitude,shift,heart_rate,body_temp_C
+2025-01-09T04:00:00,Worker-36,Zone-C (Oxygen Plant),17.6854,83.218024,Afternoon,60,37.8
+2025-01-04T00:00:00,Worker-39,Zone-A (Coke Oven),17.686976,83.223434,Afternoon,60,36.8
+2025-01-03T08:00:00,Worker-14,Zone-C (Oxygen Plant),17.682017,83.221719,Night,77,38.3
+2025-01-06T10:00:00,Worker-36,Zone-B (Blast Furnace),17.682743,83.218104,Morning,68,36.7
+2025-01-07T05:00:00,Worker-16,Zone-B (Blast Furnace),17.684362,83.216503,Night,85,37.4
+2025-01-03T07:00:00,Worker-47,Zone-A (Coke Oven),17.689036,83.221429,Morning,91,38.1
+2025-01-08T08:00:00,Worker-45,Zone-A (Coke Oven),17.687752,83.216504,Night,96,37.0
+2025-01-09T07:00:00,Worker-4,Zone-C (Oxygen Plant),17.685279,83.221671,Afternoon,67,38.2
+2025-01-03T10:00:00,Worker-48,Zone-A (Coke Oven),17.688139,83.219822,Morning,79,37.3
+2025-01-04T09:00:00,Worker-35,Zone-B (Blast Furnace),17.685068,83.220478,Morning,63,37.7
+2025-01-05T04:00:00,Worker-29,Zone-A (Coke Oven),17.684021,83.216398,Afternoon,69,36.3
+2025-01-01T21:00:00,Worker-31,Zone-A (Coke Oven),17.687282,83.216126,Afternoon,92,37.1
+2025-01-08T10:00:00,Worker-9,Zone-B (Blast Furnace),17.686609,83.215481,Afternoon,101,37.4
+2025-01-06T23:00:00,Worker-40,Zone-B (Blast Furnace),17.684223,83.216163,Afternoon,80,37.7
+2025-01-07T03:00:00,Worker-6,Zone-A (Coke Oven),17.688517,83.217735,Afternoon,72,36.8
+2025-01-07T08:00:00,Worker-42,Zone-A (Coke Oven),17.689497,83.215193,Afternoon,99,38.1
+2025-01-05T17:00:00,Worker-40,Zone-B (Blast Furnace),17.686205,83.222742,Morning,72,37.7
+2025-01-02T15:00:00,Worker-49,Zone-A (Coke Oven),17.682924,83.214045,Night,69,38.2
+2025-01-04T01:00:00,Worker-1,Zone-C (Oxygen Plant),17.688738,83.214613,Afternoon,90,36.1
+2025-01-03T05:00:00,Worker-48,Zone-B (Blast Furnace),17.683838,83.218733,Afternoon,95,37.2
+2025-01-08T18:00:00,Worker-10,Zone-A (Coke Oven),17.685566,83.22256,Night,62,36.6
+2025-01-01T15:00:00,Worker-19,Zone-B (Blast Furnace),17.689692,83.21968,Morning,89,37.6
+2025-01-01T02:00:00,Worker-5,Zone-D (Workshop),17.688404,83.22013,Night,83,38.2
+2025-01-01T04:00:00,Worker-19,Zone-D (Workshop),17.684112,83.217307,Night,66,38.3
+2025-01-06T04:00:00,Worker-39,Zone-A (Coke Oven),17.683664,83.218507,Afternoon,95,38.3
+2025-01-01T05:00:00,Worker-3,Zone-B (Blast Furnace),17.691023,83.216549,Afternoon,85,37.9
+2025-01-01T04:00:00,Worker-23,Zone-C (Oxygen Plant),17.685354,83.216523,Night,77,38.0
+2025-01-07T16:00:00,Worker-17,Zone-D (Workshop),17.690704,83.221649,Morning,95,38.4
+2025-01-03T09:00:00,Worker-10,Zone-C (Oxygen Plant),17.690772,83.220069,Morning,106,37.0
+2025-01-08T05:00:00,Worker-40,Zone-B (Blast Furnace),17.685973,83.219229,Afternoon,79,38.3
+2025-01-04T12:00:00,Worker-29,Zone-B (Blast Furnace),17.683868,83.214886,Night,103,38.0
+2025-01-02T11:00:00,Worker-20,Zone-B (Blast Furnace),17.686101,83.22259,Morning,101,38.3
+2025-01-02T16:00:00,Worker-21,Zone-A (Coke Oven),17.687373,83.222986,Morning,71,36.8
+2025-01-02T13:00:00,Worker-47,Zone-A (Coke Oven),17.689454,83.222301,Afternoon,86,36.8
+2025-01-08T22:00:00,Worker-41,Zone-C (Oxygen Plant),17.68332,83.215379,Morning,71,36.1
+2025-01-07T12:00:00,Worker-40,Zone-C (Oxygen Plant),17.687856,83.219624,Night,74,36.6
+2025-01-01T06:00:00,Worker-23,Zone-A (Coke Oven),17.688681,83.218266,Night,98,37.2
+2025-01-07T22:00:00,Worker-24,Zone-B (Blast Furnace),17.690321,83.218414,Morning,70,36.5
+2025-01-01T08:00:00,Worker-27,Zone-A (Coke Oven),17.691054,83.223002,Morning,107,37.7
+2025-01-03T03:00:00,Worker-49,Zone-B (Blast Furnace),17.682461,83.222771,Afternoon,99,37.2
+2025-01-04T11:00:00,Worker-30,Zone-B (Blast Furnace),17.686076,83.221262,Night,107,38.1
+2025-01-08T16:00:00,Worker-21,Zone-D (Workshop),17.687915,83.220925,Night,94,37.3
+2025-01-08T12:00:00,Worker-3,Zone-A (Coke Oven),17.686316,83.22177,Morning,75,37.3
+2025-01-05T05:00:00,Worker-48,Zone-A (Coke Oven),17.687377,83.218661,Night,63,36.5
+2025-01-05T16:00:00,Worker-26,Zone-C (Oxygen Plant),17.689537,83.216359,Morning,87,36.7
+2025-01-01T13:00:00,Worker-45,Zone-B (Blast Furnace),17.686436,83.219961,Morning,106,37.3
+2025-01-02T22:00:00,Worker-50,Zone-B (Blast Furnace),17.685731,83.216735,Morning,71,37.1
+2025-01-08T14:00:00,Worker-13,Zone-D (Workshop),17.682702,83.216741,Night,105,38.0
+2025-01-08T15:00:00,Worker-47,Zone-A (Coke Oven),17.682712,83.220562,Night,83,36.2
+2025-01-08T13:00:00,Worker-25,Zone-B (Blast Furnace),17.685587,83.217306,Morning,81,37.4
+2025-01-08T00:00:00,Worker-10,Zone-B (Blast Furnace),17.690488,83.215289,Night,63,37.0
+2025-01-04T07:00:00,Worker-47,Zone-D (Workshop),17.684688,83.215307,Morning,72,36.0
+2025-01-09T03:00:00,Worker-17,Zone-A (Coke Oven),17.686386,83.222054,Night,60,37.5
+2025-01-06T06:00:00,Worker-16,Zone-B (Blast Furnace),17.687689,83.218257,Afternoon,88,36.2
+2025-01-07T09:00:00,Worker-1,Zone-B (Blast Furnace),17.690622,83.216281,Night,95,38.1
+2025-01-03T05:00:00,Worker-4,Zone-B (Blast Furnace),17.683283,83.220033,Morning,69,38.1
+2025-01-08T02:00:00,Worker-37,Zone-C (Oxygen Plant),17.685111,83.214377,Morning,86,38.5
+2025-01-02T17:00:00,Worker-44,Zone-C (Oxygen Plant),17.687911,83.220415,Night,96,38.0
+2025-01-02T21:00:00,Worker-30,Zone-C (Oxygen Plant),17.691115,83.214431,Afternoon,80,36.9
+2025-01-05T01:00:00,Worker-5,Zone-D (Workshop),17.690233,83.214149,Afternoon,68,36.3
+2025-01-03T22:00:00,Worker-22,Zone-D (Workshop),17.687046,83.220458,Night,63,36.3
+2025-01-08T18:00:00,Worker-41,Zone-A (Coke Oven),17.686637,83.220387,Night,78,37.1
+2025-01-04T09:00:00,Worker-17,Zone-C (Oxygen Plant),17.691071,83.219643,Afternoon,93,37.8
+2025-01-06T07:00:00,Worker-32,Zone-B (Blast Furnace),17.690637,83.215827,Afternoon,72,36.0
+2025-01-01T06:00:00,Worker-30,Zone-A (Coke Oven),17.689175,83.215573,Night,86,37.0
+2025-01-04T13:00:00,Worker-23,Zone-B (Blast Furnace),17.681913,83.215512,Afternoon,76,38.0
+2025-01-04T06:00:00,Worker-20,Zone-C (Oxygen Plant),17.68947,83.214638,Afternoon,81,37.0
+2025-01-07T01:00:00,Worker-40,Zone-A (Coke Oven),17.69012,83.21544,Afternoon,103,37.2
+2025-01-06T01:00:00,Worker-3,Zone-B (Blast Furnace),17.686615,83.219772,Night,81,37.2
+2025-01-05T09:00:00,Worker-48,Zone-A (Coke Oven),17.690151,83.216493,Night,103,36.8
+2025-01-06T17:00:00,Worker-2,Zone-B (Blast Furnace),17.687574,83.216817,Afternoon,64,38.4
+2025-01-03T23:00:00,Worker-2,Zone-C (Oxygen Plant),17.691636,83.219765,Morning,96,37.5
+2025-01-02T23:00:00,Worker-39,Zone-A (Coke Oven),17.690446,83.221015,Night,80,37.8
+2025-01-03T21:00:00,Worker-27,Zone-A (Coke Oven),17.686771,83.215876,Afternoon,79,36.5
+2025-01-04T05:00:00,Worker-12,Zone-A (Coke Oven),17.685542,83.213874,Morning,65,37.1
+2025-01-01T06:00:00,Worker-31,Zone-B (Blast Furnace),17.683702,83.222736,Night,93,36.8
+2025-01-04T11:00:00,Worker-10,Zone-A (Coke Oven),17.690021,83.22288,Night,68,36.5
+2025-01-01T09:00:00,Worker-30,Zone-D (Workshop),17.688937,83.218723,Morning,79,38.3
+2025-01-08T07:00:00,Worker-39,Zone-A (Coke Oven),17.685133,83.222392,Morning,93,37.9
+2025-01-08T22:00:00,Worker-20,Zone-A (Coke Oven),17.687576,83.216621,Morning,80,36.5
+2025-01-04T01:00:00,Worker-18,Zone-C (Oxygen Plant),17.689528,83.220211,Afternoon,69,36.4
+2025-01-02T05:00:00,Worker-1,Zone-A (Coke Oven),17.683866,83.217003,Afternoon,77,36.4
+2025-01-08T12:00:00,Worker-19,Zone-B (Blast Furnace),17.683513,83.216614,Afternoon,94,37.1
+2025-01-02T09:00:00,Worker-2,Zone-D (Workshop),17.690833,83.214005,Afternoon,63,36.2
+2025-01-05T04:00:00,Worker-12,Zone-D (Workshop),17.687963,83.216624,Morning,105,37.9
+2025-01-06T16:00:00,Worker-6,Zone-D (Workshop),17.687478,83.214429,Night,89,36.2
+2025-01-04T07:00:00,Worker-44,Zone-D (Workshop),17.686505,83.222974,Morning,99,36.6
+2025-01-04T21:00:00,Worker-26,Zone-B (Blast Furnace),17.688796,83.220152,Afternoon,89,37.2
+2025-01-01T16:00:00,Worker-31,Zone-A (Coke Oven),17.685314,83.218112,Morning,78,37.9
+2025-01-07T10:00:00,Worker-37,Zone-B (Blast Furnace),17.686879,83.217557,Night,110,36.3
+2025-01-06T22:00:00,Worker-42,Zone-A (Coke Oven),17.689724,83.218827,Afternoon,97,37.0
+2025-01-07T14:00:00,Worker-16,Zone-B (Blast Furnace),17.691539,83.217338,Afternoon,73,38.0
+2025-01-07T07:00:00,Worker-28,Zone-D (Workshop),17.687472,83.216922,Night,75,36.4
+2025-01-08T03:00:00,Worker-5,Zone-D (Workshop),17.682943,83.219461,Afternoon,95,36.2
+2025-01-05T17:00:00,Worker-12,Zone-C (Oxygen Plant),17.691359,83.214196,Morning,103,38.0
+2025-01-09T05:00:00,Worker-25,Zone-C (Oxygen Plant),17.686743,83.220102,Morning,73,38.0
+2025-01-07T04:00:00,Worker-49,Zone-A (Coke Oven),17.689371,83.220109,Afternoon,94,36.7
+2025-01-07T13:00:00,Worker-37,Zone-D (Workshop),17.683757,83.220315,Afternoon,79,37.4
+2025-01-08T05:00:00,Worker-20,Zone-D (Workshop),17.688978,83.222651,Morning,97,36.0
+2025-01-06T10:00:00,Worker-26,Zone-B (Blast Furnace),17.690325,83.214124,Night,63,36.0
+2025-01-06T23:00:00,Worker-23,Zone-A (Coke Oven),17.690412,83.222157,Morning,87,37.8
+2025-01-05T04:00:00,Worker-41,Zone-C (Oxygen Plant),17.688918,83.21756,Afternoon,94,36.5
+2025-01-02T20:00:00,Worker-31,Zone-B (Blast Furnace),17.683682,83.217346,Afternoon,86,36.4
+2025-01-08T03:00:00,Worker-9,Zone-B (Blast Furnace),17.681916,83.219984,Morning,106,38.2
+2025-01-08T00:00:00,Worker-28,Zone-B (Blast Furnace),17.682647,83.219922,Afternoon,89,38.2
+2025-01-08T10:00:00,Worker-39,Zone-D (Workshop),17.688032,83.218044,Afternoon,95,38.1
+2025-01-05T02:00:00,Worker-23,Zone-B (Blast Furnace),17.683658,83.219546,Night,91,38.1
+2025-01-03T12:00:00,Worker-46,Zone-C (Oxygen Plant),17.685908,83.218962,Afternoon,62,38.4
+2025-01-07T01:00:00,Worker-31,Zone-C (Oxygen Plant),17.682932,83.218315,Night,65,36.4
+2025-01-08T19:00:00,Worker-34,Zone-C (Oxygen Plant),17.686449,83.214282,Night,65,36.6
+2025-01-07T17:00:00,Worker-48,Zone-A (Coke Oven),17.688641,83.218892,Night,79,37.5
+2025-01-04T15:00:00,Worker-35,Zone-A (Coke Oven),17.686489,83.218627,Afternoon,96,37.8
+2025-01-05T11:00:00,Worker-23,Zone-C (Oxygen Plant),17.684692,83.213853,Night,107,36.8
+2025-01-09T08:00:00,Worker-37,Zone-C (Oxygen Plant),17.682414,83.218232,Morning,96,36.1
+2025-01-04T02:00:00,Worker-48,Zone-A (Coke Oven),17.684668,83.214325,Night,64,38.1
+2025-01-03T23:00:00,Worker-17,Zone-B (Blast Furnace),17.687958,83.216252,Afternoon,60,37.9
+2025-01-07T10:00:00,Worker-12,Zone-B (Blast Furnace),17.688392,83.217198,Morning,76,38.0
+2025-01-03T12:00:00,Worker-32,Zone-B (Blast Furnace),17.689794,83.22212,Afternoon,65,38.4
+2025-01-07T08:00:00,Worker-10,Zone-D (Workshop),17.689328,83.217629,Afternoon,75,37.7
+2025-01-08T17:00:00,Worker-41,Zone-B (Blast Furnace),17.683909,83.220844,Afternoon,63,37.6
+2025-01-09T01:00:00,Worker-8,Zone-A (Coke Oven),17.683476,83.217487,Afternoon,90,37.9
+2025-01-09T00:00:00,Worker-35,Zone-B (Blast Furnace),17.685598,83.220556,Afternoon,76,36.4
+2025-01-05T15:00:00,Worker-1,Zone-C (Oxygen Plant),17.691072,83.217988,Night,80,38.4
+2025-01-08T06:00:00,Worker-3,Zone-A (Coke Oven),17.690977,83.219874,Afternoon,99,38.3
+2025-01-03T21:00:00,Worker-22,Zone-C (Oxygen Plant),17.684471,83.214483,Night,97,37.0
+2025-01-09T05:00:00,Worker-44,Zone-B (Blast Furnace),17.689143,83.219387,Morning,93,36.8
+2025-01-08T08:00:00,Worker-12,Zone-C (Oxygen Plant),17.687276,83.220228,Morning,60,37.0
+2025-01-06T14:00:00,Worker-7,Zone-D (Workshop),17.685315,83.220753,Afternoon,72,36.1
+2025-01-07T14:00:00,Worker-6,Zone-A (Coke Oven),17.691185,83.220066,Morning,98,37.6
+2025-01-08T13:00:00,Worker-8,Zone-A (Coke Oven),17.690364,83.214799,Night,108,38.2
+2025-01-07T00:00:00,Worker-12,Zone-A (Coke Oven),17.688757,83.216033,Afternoon,102,38.3
+2025-01-07T19:00:00,Worker-30,Zone-C (Oxygen Plant),17.689494,83.220422,Night,109,37.9
+2025-01-03T17:00:00,Worker-11,Zone-A (Coke Oven),17.684573,83.214124,Afternoon,81,38.5
+2025-01-03T18:00:00,Worker-17,Zone-B (Blast Furnace),17.686206,83.218417,Morning,99,37.0
+2025-01-07T21:00:00,Worker-32,Zone-A (Coke Oven),17.683239,83.221187,Morning,99,37.6
+2025-01-05T17:00:00,Worker-46,Zone-C (Oxygen Plant),17.682833,83.214229,Night,106,36.6
+2025-01-05T18:00:00,Worker-2,Zone-D (Workshop),17.683289,83.219903,Morning,102,37.0
+2025-01-02T14:00:00,Worker-45,Zone-C (Oxygen Plant),17.690846,83.219246,Night,105,38.3
+2025-01-06T05:00:00,Worker-31,Zone-D (Workshop),17.685839,83.220778,Morning,94,36.6
+2025-01-05T02:00:00,Worker-45,Zone-D (Workshop),17.683012,83.218853,Afternoon,81,37.7
+2025-01-05T06:00:00,Worker-4,Zone-A (Coke Oven),17.685454,83.222033,Afternoon,65,38.1
+2025-01-09T02:00:00,Worker-50,Zone-C (Oxygen Plant),17.688278,83.215266,Morning,84,37.7
+2025-01-04T04:00:00,Worker-45,Zone-D (Workshop),17.690765,83.219806,Afternoon,91,36.2
+2025-01-07T17:00:00,Worker-29,Zone-B (Blast Furnace),17.683199,83.215431,Night,97,36.6
+2025-01-05T03:00:00,Worker-5,Zone-C (Oxygen Plant),17.686797,83.22315,Afternoon,61,36.1
+2025-01-01T14:00:00,Worker-22,Zone-A (Coke Oven),17.685855,83.215617,Night,102,37.3
+2025-01-08T05:00:00,Worker-35,Zone-B (Blast Furnace),17.689211,83.21583,Morning,62,37.8
+2025-01-06T05:00:00,Worker-42,Zone-A (Coke Oven),17.686512,83.22268,Morning,75,37.8
+2025-01-02T09:00:00,Worker-1,Zone-B (Blast Furnace),17.688127,83.222547,Morning,89,37.5
+2025-01-07T07:00:00,Worker-5,Zone-A (Coke Oven),17.682942,83.21945,Night,74,36.2
+2025-01-03T03:00:00,Worker-28,Zone-C (Oxygen Plant),17.689915,83.223322,Night,85,36.8
+2025-01-08T07:00:00,Worker-37,Zone-B (Blast Furnace),17.685016,83.223147,Morning,108,36.1
+2025-01-02T20:00:00,Worker-22,Zone-A (Coke Oven),17.683007,83.214912,Afternoon,70,37.7
+2025-01-06T21:00:00,Worker-11,Zone-D (Workshop),17.684236,83.21932,Morning,66,38.0
+2025-01-07T17:00:00,Worker-40,Zone-D (Workshop),17.689577,83.213656,Afternoon,65,36.0
+2025-01-02T21:00:00,Worker-6,Zone-C (Oxygen Plant),17.685962,83.221574,Afternoon,104,36.3
+2025-01-02T12:00:00,Worker-41,Zone-C (Oxygen Plant),17.687031,83.21762,Morning,99,37.7
+2025-01-07T08:00:00,Worker-12,Zone-D (Workshop),17.68792,83.21438,Afternoon,82,37.0
+2025-01-06T22:00:00,Worker-16,Zone-B (Blast Furnace),17.682975,83.218802,Morning,99,36.9
+2025-01-09T02:00:00,Worker-35,Zone-B (Blast Furnace),17.686442,83.219765,Morning,77,36.1
+2025-01-02T04:00:00,Worker-10,Zone-D (Workshop),17.686775,83.215098,Morning,63,37.6
+2025-01-04T00:00:00,Worker-14,Zone-D (Workshop),17.684314,83.219668,Afternoon,62,36.3
+2025-01-01T13:00:00,Worker-35,Zone-B (Blast Furnace),17.68338,83.213791,Night,67,36.2
+2025-01-03T12:00:00,Worker-47,Zone-D (Workshop),17.687727,83.21676,Morning,107,37.7
+2025-01-04T11:00:00,Worker-15,Zone-A (Coke Oven),17.685061,83.214481,Night,86,38.2
+2025-01-05T00:00:00,Worker-15,Zone-A (Coke Oven),17.68651,83.218344,Afternoon,69,36.5
+2025-01-07T12:00:00,Worker-30,Zone-B (Blast Furnace),17.685673,83.214864,Night,72,37.6
+2025-01-03T21:00:00,Worker-13,Zone-C (Oxygen Plant),17.683072,83.220422,Morning,77,36.3
+2025-01-05T23:00:00,Worker-30,Zone-D (Workshop),17.683512,83.216936,Afternoon,98,36.4
+2025-01-07T19:00:00,Worker-40,Zone-B (Blast Furnace),17.687581,83.219028,Morning,65,37.0
+2025-01-06T13:00:00,Worker-32,Zone-B (Blast Furnace),17.687716,83.22187,Afternoon,60,37.8
+2025-01-08T20:00:00,Worker-16,Zone-B (Blast Furnace),17.685073,83.219295,Night,69,38.3
+2025-01-01T01:00:00,Worker-27,Zone-A (Coke Oven),17.682201,83.218207,Night,62,37.1
+2025-01-05T04:00:00,Worker-31,Zone-A (Coke Oven),17.686324,83.215905,Night,108,36.0
+2025-01-08T19:00:00,Worker-27,Zone-B (Blast Furnace),17.683127,83.216458,Night,65,36.0
+2025-01-08T03:00:00,Worker-20,Zone-B (Blast Furnace),17.688833,83.222079,Night,97,36.1
+2025-01-05T20:00:00,Worker-30,Zone-B (Blast Furnace),17.690542,83.217554,Afternoon,100,37.2
+2025-01-07T18:00:00,Worker-1,Zone-A (Coke Oven),17.685649,83.220408,Night,62,36.7
+2025-01-09T00:00:00,Worker-18,Zone-B (Blast Furnace),17.689677,83.21431,Afternoon,107,38.3
+2025-01-06T11:00:00,Worker-44,Zone-C (Oxygen Plant),17.69068,83.21461,Afternoon,89,37.5
+2025-01-04T21:00:00,Worker-24,Zone-B (Blast Furnace),17.688282,83.220549,Night,105,37.9
+2025-01-02T11:00:00,Worker-22,Zone-B (Blast Furnace),17.687196,83.21999,Night,108,37.5
+2025-01-08T11:00:00,Worker-14,Zone-B (Blast Furnace),17.685005,83.222479,Night,103,37.1
+2025-01-01T13:00:00,Worker-5,Zone-C (Oxygen Plant),17.685252,83.218362,Night,67,37.2
+2025-01-06T16:00:00,Worker-44,Zone-C (Oxygen Plant),17.68632,83.217181,Night,104,38.0
+2025-01-01T16:00:00,Worker-13,Zone-D (Workshop),17.682673,83.217407,Morning,78,38.4
+2025-01-01T19:00:00,Worker-7,Zone-B (Blast Furnace),17.684559,83.220471,Afternoon,69,38.2
+2025-01-06T13:00:00,Worker-41,Zone-A (Coke Oven),17.684732,83.223196,Night,68,37.2
+2025-01-05T11:00:00,Worker-29,Zone-A (Coke Oven),17.684715,83.214129,Morning,93,37.6
+2025-01-05T09:00:00,Worker-38,Zone-C (Oxygen Plant),17.688358,83.221368,Afternoon,97,37.7
+2025-01-06T15:00:00,Worker-36,Zone-D (Workshop),17.68638,83.219173,Afternoon,70,38.0
+2025-01-03T10:00:00,Worker-31,Zone-C (Oxygen Plant),17.691507,83.221197,Morning,69,36.9
+2025-01-05T20:00:00,Worker-11,Zone-B (Blast Furnace),17.688918,83.216352,Morning,105,37.7
+2025-01-08T02:00:00,Worker-10,Zone-B (Blast Furnace),17.684179,83.213912,Afternoon,96,36.3
+2025-01-03T18:00:00,Worker-24,Zone-B (Blast Furnace),17.683852,83.220571,Night,80,38.4
+2025-01-02T13:00:00,Worker-24,Zone-D (Workshop),17.687199,83.215126,Afternoon,67,38.3
+2025-01-05T07:00:00,Worker-32,Zone-B (Blast Furnace),17.691278,83.222778,Morning,60,38.4
+2025-01-06T19:00:00,Worker-33,Zone-C (Oxygen Plant),17.688272,83.216456,Afternoon,108,38.5
+2025-01-07T02:00:00,Worker-43,Zone-B (Blast Furnace),17.689796,83.220785,Afternoon,81,37.7
+2025-01-08T19:00:00,Worker-31,Zone-A (Coke Oven),17.683194,83.21901,Afternoon,61,37.0
+2025-01-03T08:00:00,Worker-29,Zone-C (Oxygen Plant),17.682725,83.21405,Night,72,37.5
+2025-01-03T08:00:00,Worker-50,Zone-C (Oxygen Plant),17.683757,83.214336,Afternoon,103,37.7
+2025-01-01T22:00:00,Worker-33,Zone-D (Workshop),17.683745,83.216678,Night,92,38.4
+2025-01-08T02:00:00,Worker-24,Zone-D (Workshop),17.683279,83.222038,Afternoon,84,36.9
+2025-01-04T00:00:00,Worker-23,Zone-C (Oxygen Plant),17.684881,83.217956,Night,65,36.5
+2025-01-05T17:00:00,Worker-48,Zone-D (Workshop),17.689837,83.216386,Night,87,37.8
+2025-01-05T10:00:00,Worker-9,Zone-A (Coke Oven),17.683236,83.216532,Night,81,36.2
+2025-01-07T07:00:00,Worker-49,Zone-D (Workshop),17.682684,83.217595,Afternoon,86,36.4
+2025-01-05T22:00:00,Worker-46,Zone-B (Blast Furnace),17.683793,83.221823,Afternoon,95,37.2
+2025-01-04T05:00:00,Worker-38,Zone-C (Oxygen Plant),17.686741,83.220899,Morning,61,38.0
+2025-01-02T15:00:00,Worker-17,Zone-C (Oxygen Plant),17.69136,83.221842,Afternoon,67,37.6
+2025-01-04T01:00:00,Worker-27,Zone-B (Blast Furnace),17.686719,83.220378,Morning,61,36.3
+2025-01-03T22:00:00,Worker-32,Zone-A (Coke Oven),17.687789,83.217118,Afternoon,96,37.1
+2025-01-03T18:00:00,Worker-41,Zone-D (Workshop),17.691543,83.221683,Afternoon,92,37.8
+2025-01-01T04:00:00,Worker-17,Zone-B (Blast Furnace),17.687617,83.214961,Afternoon,104,36.3
+2025-01-02T17:00:00,Worker-4,Zone-C (Oxygen Plant),17.685412,83.219862,Afternoon,63,36.7
+2025-01-06T15:00:00,Worker-41,Zone-A (Coke Oven),17.686939,83.221164,Morning,108,36.2
+2025-01-09T00:00:00,Worker-11,Zone-C (Oxygen Plant),17.690524,83.221768,Night,79,36.7
+2025-01-08T10:00:00,Worker-45,Zone-C (Oxygen Plant),17.682758,83.2193,Morning,60,36.3
+2025-01-04T00:00:00,Worker-24,Zone-D (Workshop),17.68592,83.222709,Morning,66,36.5
+2025-01-06T08:00:00,Worker-15,Zone-B (Blast Furnace),17.689751,83.219087,Night,93,38.1
+2025-01-08T14:00:00,Worker-36,Zone-A (Coke Oven),17.685973,83.22266,Morning,68,38.3
+2025-01-06T02:00:00,Worker-23,Zone-C (Oxygen Plant),17.688711,83.21489,Afternoon,98,37.3
+2025-01-04T15:00:00,Worker-12,Zone-C (Oxygen Plant),17.682088,83.221646,Morning,68,38.1
+2025-01-02T12:00:00,Worker-45,Zone-B (Blast Furnace),17.684874,83.215598,Morning,87,37.7
+2025-01-09T08:00:00,Worker-8,Zone-A (Coke Oven),17.681988,83.218343,Afternoon,62,36.5
+2025-01-01T08:00:00,Worker-43,Zone-A (Coke Oven),17.686491,83.222585,Morning,64,36.8
+2025-01-01T02:00:00,Worker-49,Zone-A (Coke Oven),17.689624,83.222701,Morning,97,38.3
+2025-01-02T23:00:00,Worker-43,Zone-C (Oxygen Plant),17.682093,83.214956,Night,77,38.4
+2025-01-04T17:00:00,Worker-23,Zone-B (Blast Furnace),17.690351,83.221308,Night,75,37.3
+2025-01-01T17:00:00,Worker-7,Zone-A (Coke Oven),17.687088,83.220658,Afternoon,70,38.3
+2025-01-06T17:00:00,Worker-1,Zone-A (Coke Oven),17.691042,83.222705,Night,90,36.9
+2025-01-07T06:00:00,Worker-12,Zone-D (Workshop),17.688535,83.214573,Afternoon,84,37.1
+2025-01-06T11:00:00,Worker-15,Zone-D (Workshop),17.682928,83.223346,Morning,89,36.3
+2025-01-02T10:00:00,Worker-32,Zone-C (Oxygen Plant),17.688847,83.219071,Morning,65,36.8
+2025-01-02T05:00:00,Worker-25,Zone-C (Oxygen Plant),17.686369,83.220862,Night,88,36.6
+2025-01-05T08:00:00,Worker-19,Zone-D (Workshop),17.683688,83.214196,Afternoon,103,36.9
+2025-01-01T03:00:00,Worker-44,Zone-D (Workshop),17.688521,83.217464,Night,102,37.7
+2025-01-02T06:00:00,Worker-10,Zone-D (Workshop),17.685806,83.219406,Morning,107,38.3
+2025-01-02T19:00:00,Worker-5,Zone-C (Oxygen Plant),17.691552,83.216886,Night,85,36.3
+2025-01-05T12:00:00,Worker-47,Zone-D (Workshop),17.684585,83.220635,Night,97,36.7
+2025-01-07T20:00:00,Worker-26,Zone-C (Oxygen Plant),17.686558,83.219532,Afternoon,91,37.3
+2025-01-02T13:00:00,Worker-50,Zone-D (Workshop),17.68288,83.216007,Afternoon,74,37.6
+2025-01-02T10:00:00,Worker-2,Zone-A (Coke Oven),17.689178,83.221803,Afternoon,103,36.1
+2025-01-02T21:00:00,Worker-25,Zone-C (Oxygen Plant),17.683327,83.21972,Morning,108,36.2
+2025-01-09T00:00:00,Worker-34,Zone-D (Workshop),17.689727,83.215519,Night,91,37.2
+2025-01-03T18:00:00,Worker-35,Zone-C (Oxygen Plant),17.689895,83.218905,Morning,108,36.1
+2025-01-05T14:00:00,Worker-8,Zone-D (Workshop),17.686301,83.222029,Afternoon,89,36.1
+2025-01-02T21:00:00,Worker-36,Zone-C (Oxygen Plant),17.690647,83.215141,Afternoon,68,36.8
+2025-01-05T03:00:00,Worker-32,Zone-A (Coke Oven),17.687489,83.218406,Night,103,37.3
+2025-01-06T00:00:00,Worker-31,Zone-B (Blast Furnace),17.686867,83.217414,Afternoon,97,38.4
+2025-01-07T13:00:00,Worker-44,Zone-C (Oxygen Plant),17.689465,83.216344,Morning,61,37.5
+2025-01-02T08:00:00,Worker-24,Zone-C (Oxygen Plant),17.689896,83.21934,Night,81,37.0
+2025-01-05T13:00:00,Worker-23,Zone-C (Oxygen Plant),17.685919,83.214064,Morning,75,36.6
+2025-01-04T07:00:00,Worker-38,Zone-A (Coke Oven),17.690904,83.214155,Afternoon,67,36.8
+2025-01-01T05:00:00,Worker-35,Zone-C (Oxygen Plant),17.682174,83.220078,Afternoon,96,37.3
+2025-01-05T11:00:00,Worker-18,Zone-A (Coke Oven),17.68876,83.21938,Afternoon,84,37.4
+2025-01-04T10:00:00,Worker-37,Zone-A (Coke Oven),17.689883,83.214501,Night,73,36.8
+2025-01-06T08:00:00,Worker-49,Zone-C (Oxygen Plant),17.683466,83.216495,Afternoon,72,37.2
+2025-01-01T19:00:00,Worker-35,Zone-B (Blast Furnace),17.684674,83.213975,Night,85,38.0
+2025-01-07T15:00:00,Worker-48,Zone-A (Coke Oven),17.688977,83.219282,Night,81,36.7
+2025-01-07T01:00:00,Worker-34,Zone-D (Workshop),17.686071,83.216973,Morning,101,38.1
+2025-01-06T09:00:00,Worker-20,Zone-D (Workshop),17.688435,83.216634,Afternoon,85,36.6
+2025-01-06T11:00:00,Worker-30,Zone-B (Blast Furnace),17.690609,83.219778,Night,71,37.4
+2025-01-03T06:00:00,Worker-43,Zone-D (Workshop),17.684479,83.219879,Night,109,38.3
+2025-01-07T00:00:00,Worker-47,Zone-A (Coke Oven),17.687023,83.217143,Morning,75,36.4
+2025-01-08T07:00:00,Worker-49,Zone-C (Oxygen Plant),17.690241,83.217603,Morning,100,36.5
+2025-01-05T09:00:00,Worker-18,Zone-C (Oxygen Plant),17.68826,83.216064,Night,75,37.0
+2025-01-02T05:00:00,Worker-10,Zone-B (Blast Furnace),17.682077,83.22147,Afternoon,89,37.2
+2025-01-05T15:00:00,Worker-28,Zone-A (Coke Oven),17.68382,83.216227,Morning,76,38.0
+2025-01-03T23:00:00,Worker-43,Zone-B (Blast Furnace),17.688243,83.213922,Night,91,38.0
+2025-01-01T14:00:00,Worker-6,Zone-C (Oxygen Plant),17.687816,83.222172,Afternoon,83,37.7
+2025-01-01T23:00:00,Worker-26,Zone-B (Blast Furnace),17.68416,83.21921,Night,67,37.3
+2025-01-07T04:00:00,Worker-50,Zone-C (Oxygen Plant),17.686765,83.214402,Night,67,37.9
+2025-01-04T08:00:00,Worker-22,Zone-D (Workshop),17.689858,83.22094,Afternoon,73,36.4
+2025-01-02T20:00:00,Worker-14,Zone-C (Oxygen Plant),17.686195,83.216043,Night,63,37.2
+2025-01-04T23:00:00,Worker-45,Zone-A (Coke Oven),17.684965,83.217738,Night,75,38.4
+2025-01-09T08:00:00,Worker-10,Zone-C (Oxygen Plant),17.686552,83.217177,Afternoon,61,37.6
+2025-01-07T11:00:00,Worker-3,Zone-A (Coke Oven),17.688707,83.221388,Morning,76,37.4
+2025-01-04T07:00:00,Worker-41,Zone-C (Oxygen Plant),17.690832,83.220352,Night,75,38.1
+2025-01-05T03:00:00,Worker-1,Zone-D (Workshop),17.691075,83.222679,Afternoon,65,38.3
+2025-01-09T01:00:00,Worker-16,Zone-C (Oxygen Plant),17.683904,83.222402,Afternoon,100,36.8
+2025-01-09T04:00:00,Worker-42,Zone-D (Workshop),17.689693,83.21624,Morning,109,38.4
+2025-01-06T00:00:00,Worker-48,Zone-D (Workshop),17.691065,83.216827,Afternoon,66,38.1
+2025-01-08T10:00:00,Worker-17,Zone-A (Coke Oven),17.685319,83.219521,Night,107,36.8
+2025-01-08T09:00:00,Worker-2,Zone-A (Coke Oven),17.688214,83.215337,Afternoon,110,37.6
+2025-01-01T00:00:00,Worker-26,Zone-B (Blast Furnace),17.688083,83.216637,Morning,67,36.4
+2025-01-06T12:00:00,Worker-46,Zone-B (Blast Furnace),17.69027,83.220358,Afternoon,88,37.2
+2025-01-08T20:00:00,Worker-9,Zone-C (Oxygen Plant),17.683535,83.21943,Afternoon,78,36.5
+2025-01-05T10:00:00,Worker-24,Zone-B (Blast Furnace),17.685735,83.217273,Night,74,36.1
+2025-01-01T05:00:00,Worker-36,Zone-B (Blast Furnace),17.690868,83.223241,Morning,76,37.8
+2025-01-02T19:00:00,Worker-4,Zone-D (Workshop),17.68798,83.219504,Morning,65,38.4
+2025-01-02T19:00:00,Worker-37,Zone-A (Coke Oven),17.681941,83.218758,Afternoon,103,37.2
+2025-01-03T09:00:00,Worker-46,Zone-B (Blast Furnace),17.683705,83.222119,Afternoon,78,37.9
+2025-01-05T01:00:00,Worker-9,Zone-D (Workshop),17.690363,83.219501,Afternoon,106,37.7
+2025-01-05T11:00:00,Worker-12,Zone-D (Workshop),17.689725,83.213788,Afternoon,75,37.5
+2025-01-03T15:00:00,Worker-24,Zone-D (Workshop),17.682657,83.218189,Afternoon,104,37.0
+2025-01-03T06:00:00,Worker-46,Zone-D (Workshop),17.688885,83.220861,Afternoon,64,36.2
+2025-01-01T15:00:00,Worker-4,Zone-C (Oxygen Plant),17.691111,83.218209,Afternoon,98,38.3
+2025-01-07T09:00:00,Worker-46,Zone-A (Coke Oven),17.681854,83.218545,Afternoon,79,38.4
+2025-01-08T03:00:00,Worker-24,Zone-B (Blast Furnace),17.691481,83.219096,Night,71,36.7
+2025-01-06T08:00:00,Worker-32,Zone-C (Oxygen Plant),17.690579,83.214819,Afternoon,105,37.3
+2025-01-02T12:00:00,Worker-17,Zone-A (Coke Oven),17.684933,83.223285,Afternoon,77,37.9
+2025-01-05T14:00:00,Worker-19,Zone-C (Oxygen Plant),17.687929,83.221116,Afternoon,93,36.8
+2025-01-02T18:00:00,Worker-21,Zone-D (Workshop),17.689437,83.215013,Night,100,38.0
+2025-01-01T13:00:00,Worker-13,Zone-B (Blast Furnace),17.682346,83.215331,Afternoon,76,36.4
+2025-01-05T23:00:00,Worker-28,Zone-A (Coke Oven),17.691752,83.222772,Morning,88,36.9
+2025-01-08T13:00:00,Worker-36,Zone-D (Workshop),17.686378,83.214625,Night,69,36.3
+2025-01-01T23:00:00,Worker-14,Zone-C (Oxygen Plant),17.683607,83.215183,Night,77,37.4
+2025-01-08T01:00:00,Worker-38,Zone-B (Blast Furnace),17.687635,83.223216,Night,109,37.4
+2025-01-05T10:00:00,Worker-5,Zone-B (Blast Furnace),17.689483,83.220269,Afternoon,61,36.7
+2025-01-08T06:00:00,Worker-8,Zone-D (Workshop),17.685536,83.222791,Morning,80,36.4
+2025-01-01T20:00:00,Worker-30,Zone-D (Workshop),17.686341,83.223052,Night,102,36.0
+2025-01-01T11:00:00,Worker-42,Zone-D (Workshop),17.685049,83.220815,Night,96,36.3
+2025-01-01T12:00:00,Worker-42,Zone-C (Oxygen Plant),17.685032,83.214055,Morning,95,38.4
+2025-01-05T01:00:00,Worker-6,Zone-D (Workshop),17.684352,83.215901,Afternoon,65,36.1
+2025-01-03T05:00:00,Worker-11,Zone-D (Workshop),17.689595,83.216349,Night,69,36.3
+2025-01-06T05:00:00,Worker-28,Zone-C (Oxygen Plant),17.690837,83.219535,Afternoon,102,36.2
+2025-01-04T22:00:00,Worker-33,Zone-B (Blast Furnace),17.686696,83.222354,Afternoon,77,37.4
+2025-01-05T12:00:00,Worker-6,Zone-D (Workshop),17.68991,83.219639,Afternoon,100,37.1
+2025-01-01T10:00:00,Worker-33,Zone-C (Oxygen Plant),17.691533,83.220264,Night,103,37.8
+2025-01-06T06:00:00,Worker-34,Zone-A (Coke Oven),17.684707,83.217874,Afternoon,79,36.4
+2025-01-02T08:00:00,Worker-44,Zone-C (Oxygen Plant),17.690215,83.218731,Afternoon,96,36.1
+2025-01-01T19:00:00,Worker-3,Zone-A (Coke Oven),17.686907,83.21763,Afternoon,102,37.8
+2025-01-03T16:00:00,Worker-23,Zone-C (Oxygen Plant),17.687656,83.221186,Morning,67,37.9
+2025-01-05T22:00:00,Worker-12,Zone-B (Blast Furnace),17.690229,83.213953,Afternoon,105,36.7
+2025-01-07T06:00:00,Worker-47,Zone-D (Workshop),17.689374,83.217999,Afternoon,81,38.4
+2025-01-02T23:00:00,Worker-14,Zone-B (Blast Furnace),17.682582,83.223322,Afternoon,103,36.3
+2025-01-06T16:00:00,Worker-2,Zone-A (Coke Oven),17.685749,83.213633,Night,90,37.2
+2025-01-05T07:00:00,Worker-43,Zone-D (Workshop),17.684828,83.221631,Night,83,37.7
+2025-01-08T08:00:00,Worker-44,Zone-D (Workshop),17.689846,83.214376,Morning,60,36.5
+2025-01-01T04:00:00,Worker-45,Zone-B (Blast Furnace),17.69039,83.215592,Night,69,37.6
+2025-01-05T15:00:00,Worker-41,Zone-B (Blast Furnace),17.682661,83.221197,Morning,90,37.1
+2025-01-02T05:00:00,Worker-11,Zone-B (Blast Furnace),17.689188,83.217953,Afternoon,90,36.0
+2025-01-05T19:00:00,Worker-38,Zone-B (Blast Furnace),17.683813,83.219194,Afternoon,63,36.8
+2025-01-02T02:00:00,Worker-41,Zone-D (Workshop),17.691595,83.221986,Night,97,37.5
+2025-01-06T21:00:00,Worker-19,Zone-A (Coke Oven),17.686675,83.218361,Night,106,37.5
+2025-01-08T05:00:00,Worker-32,Zone-B (Blast Furnace),17.688943,83.218783,Afternoon,96,36.8
+2025-01-01T16:00:00,Worker-18,Zone-D (Workshop),17.690691,83.214669,Night,101,36.9
+2025-01-08T10:00:00,Worker-28,Zone-A (Coke Oven),17.683413,83.220762,Afternoon,82,37.1
+2025-01-06T09:00:00,Worker-15,Zone-C (Oxygen Plant),17.691017,83.222035,Night,102,37.2
+2025-01-04T03:00:00,Worker-47,Zone-D (Workshop),17.691398,83.221831,Night,101,37.8
+2025-01-06T00:00:00,Worker-11,Zone-B (Blast Furnace),17.684625,83.220993,Night,90,36.3
+2025-01-03T03:00:00,Worker-11,Zone-D (Workshop),17.682809,83.21766,Afternoon,79,36.6
+2025-01-06T22:00:00,Worker-4,Zone-A (Coke Oven),17.685388,83.216108,Night,70,36.4
+2025-01-06T08:00:00,Worker-3,Zone-A (Coke Oven),17.685177,83.21464,Morning,67,37.4
+2025-01-06T04:00:00,Worker-17,Zone-C (Oxygen Plant),17.689649,83.221194,Night,77,38.2
+2025-01-08T08:00:00,Worker-33,Zone-A (Coke Oven),17.688864,83.222766,Afternoon,89,38.4
+2025-01-09T01:00:00,Worker-8,Zone-A (Coke Oven),17.689617,83.219597,Morning,95,36.1
+2025-01-02T02:00:00,Worker-11,Zone-A (Coke Oven),17.690509,83.22261,Morning,106,36.7
+2025-01-05T17:00:00,Worker-49,Zone-D (Workshop),17.689126,83.214493,Night,83,36.8
+2025-01-02T11:00:00,Worker-8,Zone-B (Blast Furnace),17.686191,83.217657,Morning,75,38.1
+2025-01-06T01:00:00,Worker-22,Zone-C (Oxygen Plant),17.68685,83.214352,Afternoon,105,37.9
+2025-01-04T20:00:00,Worker-41,Zone-B (Blast Furnace),17.683316,83.221035,Afternoon,110,36.6
+2025-01-05T13:00:00,Worker-27,Zone-D (Workshop),17.690781,83.223018,Night,110,37.7
+2025-01-01T07:00:00,Worker-29,Zone-B (Blast Furnace),17.689502,83.220676,Night,64,36.2
+2025-01-04T08:00:00,Worker-26,Zone-B (Blast Furnace),17.686141,83.217433,Morning,102,38.3
+2025-01-02T14:00:00,Worker-37,Zone-A (Coke Oven),17.691577,83.2233,Night,93,38.4
+2025-01-05T11:00:00,Worker-26,Zone-C (Oxygen Plant),17.689016,83.216637,Afternoon,60,38.1
+2025-01-06T15:00:00,Worker-40,Zone-B (Blast Furnace),17.688803,83.217962,Morning,94,37.6
+2025-01-07T14:00:00,Worker-42,Zone-D (Workshop),17.688775,83.222377,Night,85,37.9
+2025-01-04T05:00:00,Worker-6,Zone-A (Coke Oven),17.687174,83.2174,Night,107,38.2
+2025-01-06T13:00:00,Worker-35,Zone-C (Oxygen Plant),17.683937,83.218617,Afternoon,93,36.9
+2025-01-07T18:00:00,Worker-11,Zone-A (Coke Oven),17.682079,83.221466,Night,76,36.6
+2025-01-09T06:00:00,Worker-20,Zone-D (Workshop),17.69167,83.214604,Morning,83,36.6
+2025-01-06T09:00:00,Worker-23,Zone-A (Coke Oven),17.682277,83.22001,Morning,88,36.7
+2025-01-08T20:00:00,Worker-1,Zone-D (Workshop),17.68519,83.215861,Night,97,37.4
+2025-01-07T16:00:00,Worker-43,Zone-B (Blast Furnace),17.685303,83.216345,Night,96,37.7
+2025-01-08T14:00:00,Worker-25,Zone-B (Blast Furnace),17.682852,83.218665,Morning,109,36.9
+2025-01-02T01:00:00,Worker-10,Zone-D (Workshop),17.690084,83.214319,Morning,87,38.2
+2025-01-06T01:00:00,Worker-14,Zone-D (Workshop),17.682581,83.220268,Afternoon,97,37.4
+2025-01-09T07:00:00,Worker-26,Zone-C (Oxygen Plant),17.687643,83.219865,Afternoon,104,38.3
+2025-01-06T05:00:00,Worker-47,Zone-D (Workshop),17.690038,83.214943,Morning,91,37.8
+2025-01-02T09:00:00,Worker-46,Zone-A (Coke Oven),17.688745,83.218054,Morning,107,36.4
+2025-01-06T23:00:00,Worker-24,Zone-A (Coke Oven),17.687816,83.217586,Morning,83,37.4
+2025-01-01T10:00:00,Worker-34,Zone-B (Blast Furnace),17.682977,83.216549,Afternoon,79,36.7
+2025-01-01T07:00:00,Worker-10,Zone-B (Blast Furnace),17.689638,83.217718,Afternoon,78,36.5
+2025-01-08T21:00:00,Worker-32,Zone-A (Coke Oven),17.683023,83.216986,Morning,86,37.2
+2025-01-04T07:00:00,Worker-37,Zone-D (Workshop),17.690803,83.221313,Afternoon,106,38.1
+2025-01-02T09:00:00,Worker-49,Zone-B (Blast Furnace),17.686848,83.218109,Afternoon,102,37.1
+2025-01-08T18:00:00,Worker-21,Zone-A (Coke Oven),17.689798,83.220145,Afternoon,84,36.6
+2025-01-05T05:00:00,Worker-22,Zone-A (Coke Oven),17.691381,83.2224,Night,77,37.6
+2025-01-02T18:00:00,Worker-46,Zone-A (Coke Oven),17.68752,83.221462,Night,79,37.4
+2025-01-02T07:00:00,Worker-42,Zone-A (Coke Oven),17.683724,83.219687,Night,108,36.1
+2025-01-07T01:00:00,Worker-34,Zone-B (Blast Furnace),17.689306,83.218526,Morning,67,37.6
+2025-01-06T16:00:00,Worker-12,Zone-A (Coke Oven),17.68455,83.215558,Night,97,37.1
+2025-01-06T16:00:00,Worker-39,Zone-C (Oxygen Plant),17.685818,83.21395,Morning,81,37.1
+2025-01-05T10:00:00,Worker-2,Zone-C (Oxygen Plant),17.68562,83.21441,Morning,94,36.4
+2025-01-02T12:00:00,Worker-12,Zone-C (Oxygen Plant),17.689483,83.215042,Afternoon,103,36.4
+2025-01-07T13:00:00,Worker-21,Zone-B (Blast Furnace),17.682072,83.214085,Afternoon,66,36.8
+2025-01-05T09:00:00,Worker-21,Zone-C (Oxygen Plant),17.685555,83.221777,Morning,63,36.5
+2025-01-09T00:00:00,Worker-39,Zone-B (Blast Furnace),17.68673,83.221024,Afternoon,67,36.7
+2025-01-04T09:00:00,Worker-30,Zone-D (Workshop),17.682455,83.213789,Night,74,38.3
+2025-01-01T04:00:00,Worker-18,Zone-A (Coke Oven),17.684263,83.219047,Morning,79,37.4
+2025-01-05T18:00:00,Worker-6,Zone-B (Blast Furnace),17.689629,83.214924,Night,70,38.0
+2025-01-06T17:00:00,Worker-28,Zone-D (Workshop),17.682218,83.221626,Night,78,37.6
+2025-01-02T18:00:00,Worker-1,Zone-A (Coke Oven),17.691135,83.218322,Night,76,38.1
+2025-01-05T01:00:00,Worker-23,Zone-B (Blast Furnace),17.687652,83.218603,Morning,70,37.8
+2025-01-07T00:00:00,Worker-5,Zone-C (Oxygen Plant),17.682697,83.220484,Morning,106,37.4
+2025-01-03T23:00:00,Worker-28,Zone-B (Blast Furnace),17.687904,83.223074,Afternoon,103,38.4
+2025-01-07T18:00:00,Worker-17,Zone-D (Workshop),17.68453,83.220123,Afternoon,81,36.5
+2025-01-07T09:00:00,Worker-22,Zone-A (Coke Oven),17.69094,83.214837,Morning,98,37.2
+2025-01-01T02:00:00,Worker-44,Zone-B (Blast Furnace),17.685932,83.222453,Night,91,37.9
+2025-01-06T17:00:00,Worker-6,Zone-A (Coke Oven),17.687186,83.222426,Night,88,37.7
+2025-01-04T18:00:00,Worker-25,Zone-C (Oxygen Plant),17.685668,83.221891,Night,60,36.3
+2025-01-04T22:00:00,Worker-13,Zone-D (Workshop),17.681894,83.220931,Afternoon,103,38.3
+2025-01-04T19:00:00,Worker-13,Zone-A (Coke Oven),17.689963,83.219752,Night,74,36.6
+2025-01-06T06:00:00,Worker-24,Zone-A (Coke Oven),17.684608,83.222545,Night,98,36.5
+2025-01-03T02:00:00,Worker-41,Zone-D (Workshop),17.682909,83.216273,Night,91,36.4
+2025-01-03T01:00:00,Worker-43,Zone-B (Blast Furnace),17.682454,83.214782,Morning,68,36.6
+2025-01-07T01:00:00,Worker-15,Zone-C (Oxygen Plant),17.683719,83.22028,Night,103,37.3
+2025-01-03T16:00:00,Worker-44,Zone-D (Workshop),17.68182,83.217771,Night,101,36.1
+2025-01-04T10:00:00,Worker-28,Zone-D (Workshop),17.68454,83.220302,Afternoon,91,36.9
+2025-01-09T02:00:00,Worker-3,Zone-B (Blast Furnace),17.68227,83.222684,Night,88,36.8
+2025-01-05T04:00:00,Worker-13,Zone-C (Oxygen Plant),17.682618,83.219218,Morning,107,36.6
+2025-01-08T08:00:00,Worker-28,Zone-A (Coke Oven),17.69097,83.215469,Afternoon,79,36.2
+2025-01-07T16:00:00,Worker-7,Zone-A (Coke Oven),17.6866,83.221581,Night,100,38.3
+2025-01-03T16:00:00,Worker-16,Zone-A (Coke Oven),17.686536,83.223088,Morning,81,37.3
+2025-01-03T12:00:00,Worker-5,Zone-D (Workshop),17.689441,83.219753,Night,67,36.2
+2025-01-01T15:00:00,Worker-3,Zone-D (Workshop),17.684933,83.221977,Morning,110,36.3
+2025-01-05T17:00:00,Worker-4,Zone-C (Oxygen Plant),17.687907,83.217818,Morning,103,36.1
+2025-01-01T13:00:00,Worker-19,Zone-D (Workshop),17.685817,83.219673,Afternoon,74,38.2
+2025-01-08T00:00:00,Worker-40,Zone-A (Coke Oven),17.686334,83.218142,Afternoon,99,37.5
+2025-01-04T14:00:00,Worker-42,Zone-A (Coke Oven),17.686341,83.216782,Morning,66,36.3
+2025-01-07T08:00:00,Worker-46,Zone-A (Coke Oven),17.687729,83.221908,Night,68,37.6
+2025-01-03T17:00:00,Worker-23,Zone-D (Workshop),17.686614,83.219709,Morning,75,36.3
+2025-01-01T11:00:00,Worker-4,Zone-B (Blast Furnace),17.684917,83.217858,Night,108,36.9
+2025-01-07T05:00:00,Worker-35,Zone-B (Blast Furnace),17.683274,83.216587,Afternoon,78,36.9
+2025-01-01T02:00:00,Worker-34,Zone-B (Blast Furnace),17.682373,83.218571,Night,63,37.1
+2025-01-03T02:00:00,Worker-13,Zone-B (Blast Furnace),17.689653,83.216916,Night,90,37.7
+2025-01-05T23:00:00,Worker-39,Zone-C (Oxygen Plant),17.69032,83.219161,Afternoon,99,36.7
+2025-01-04T12:00:00,Worker-11,Zone-A (Coke Oven),17.686343,83.221392,Morning,91,36.5
+2025-01-01T00:00:00,Worker-41,Zone-B (Blast Furnace),17.688732,83.218165,Morning,75,37.2
+2025-01-09T04:00:00,Worker-22,Zone-D (Workshop),17.683853,83.215342,Morning,83,36.0
+2025-01-04T19:00:00,Worker-2,Zone-A (Coke Oven),17.683224,83.217904,Night,97,38.3
+2025-01-04T20:00:00,Worker-3,Zone-A (Coke Oven),17.683791,83.216341,Morning,76,37.8
+2025-01-04T14:00:00,Worker-36,Zone-B (Blast Furnace),17.683585,83.213715,Afternoon,66,36.1
+2025-01-08T05:00:00,Worker-9,Zone-D (Workshop),17.688349,83.22235,Afternoon,73,36.8
+2025-01-03T13:00:00,Worker-24,Zone-C (Oxygen Plant),17.688409,83.222912,Night,87,38.2
+2025-01-01T16:00:00,Worker-8,Zone-B (Blast Furnace),17.690627,83.214808,Morning,72,37.3
+2025-01-08T09:00:00,Worker-24,Zone-C (Oxygen Plant),17.687795,83.22327,Morning,62,37.9
+2025-01-07T06:00:00,Worker-13,Zone-C (Oxygen Plant),17.689696,83.216777,Morning,100,38.0
+2025-01-02T08:00:00,Worker-33,Zone-D (Workshop),17.683892,83.214314,Afternoon,110,37.7
+2025-01-01T16:00:00,Worker-11,Zone-D (Workshop),17.689313,83.219951,Night,83,37.2
+2025-01-05T22:00:00,Worker-12,Zone-C (Oxygen Plant),17.688925,83.218755,Afternoon,105,38.4
+2025-01-06T01:00:00,Worker-18,Zone-D (Workshop),17.688181,83.221406,Night,62,36.5
+2025-01-03T03:00:00,Worker-29,Zone-B (Blast Furnace),17.685759,83.21656,Afternoon,96,36.4
+2025-01-04T23:00:00,Worker-17,Zone-A (Coke Oven),17.683143,83.21434,Afternoon,93,36.9
+2025-01-07T05:00:00,Worker-3,Zone-D (Workshop),17.686923,83.216864,Afternoon,89,37.1
+2025-01-04T22:00:00,Worker-32,Zone-C (Oxygen Plant),17.68453,83.213747,Afternoon,74,36.7
+2025-01-01T19:00:00,Worker-23,Zone-A (Coke Oven),17.684745,83.218518,Night,101,36.2
+2025-01-03T22:00:00,Worker-15,Zone-A (Coke Oven),17.682986,83.217102,Night,72,36.8
+2025-01-08T04:00:00,Worker-22,Zone-C (Oxygen Plant),17.684827,83.221656,Night,77,36.5
+2025-01-07T10:00:00,Worker-9,Zone-C (Oxygen Plant),17.681885,83.216495,Afternoon,110,38.5
+2025-01-05T07:00:00,Worker-38,Zone-A (Coke Oven),17.68652,83.218626,Morning,85,36.6
+2025-01-08T17:00:00,Worker-48,Zone-B (Blast Furnace),17.686544,83.218658,Night,108,37.2
+2025-01-05T22:00:00,Worker-22,Zone-A (Coke Oven),17.684931,83.215378,Night,86,36.5
+2025-01-05T19:00:00,Worker-36,Zone-A (Coke Oven),17.685547,83.219275,Morning,79,38.4
+2025-01-01T02:00:00,Worker-32,Zone-C (Oxygen Plant),17.685198,83.217691,Night,108,37.0
+2025-01-09T07:00:00,Worker-45,Zone-C (Oxygen Plant),17.685061,83.213732,Morning,68,36.4
+2025-01-04T12:00:00,Worker-37,Zone-D (Workshop),17.691602,83.215542,Afternoon,64,37.3
+2025-01-03T00:00:00,Worker-31,Zone-A (Coke Oven),17.685088,83.223119,Night,79,36.2
+2025-01-02T02:00:00,Worker-44,Zone-B (Blast Furnace),17.682121,83.22039,Afternoon,61,36.5
+2025-01-01T17:00:00,Worker-25,Zone-C (Oxygen Plant),17.683859,83.216411,Night,64,37.1
+2025-01-04T22:00:00,Worker-34,Zone-A (Coke Oven),17.683518,83.222097,Afternoon,85,36.4
+2025-01-02T04:00:00,Worker-9,Zone-D (Workshop),17.686583,83.214188,Morning,68,38.2
+2025-01-04T07:00:00,Worker-28,Zone-D (Workshop),17.683388,83.219251,Afternoon,97,36.5
+2025-01-08T15:00:00,Worker-44,Zone-D (Workshop),17.684554,83.213574,Morning,88,36.2
+2025-01-05T06:00:00,Worker-39,Zone-B (Blast Furnace),17.687059,83.222603,Afternoon,89,37.2
+2025-01-01T10:00:00,Worker-48,Zone-A (Coke Oven),17.684679,83.22231,Afternoon,82,37.8
+2025-01-08T14:00:00,Worker-20,Zone-D (Workshop),17.68793,83.2216,Morning,86,36.6
+2025-01-07T14:00:00,Worker-47,Zone-D (Workshop),17.686378,83.222608,Morning,104,37.4
+2025-01-05T04:00:00,Worker-45,Zone-A (Coke Oven),17.684197,83.222205,Afternoon,100,37.3
+2025-01-08T02:00:00,Worker-5,Zone-B (Blast Furnace),17.690887,83.217613,Night,67,38.5
+2025-01-01T19:00:00,Worker-49,Zone-A (Coke Oven),17.686844,83.221295,Afternoon,88,36.4
+2025-01-03T05:00:00,Worker-33,Zone-A (Coke Oven),17.686422,83.214232,Night,103,37.9
+2025-01-05T01:00:00,Worker-22,Zone-D (Workshop),17.690358,83.217467,Morning,76,36.3
+2025-01-02T10:00:00,Worker-21,Zone-D (Workshop),17.686648,83.214182,Night,102,36.6
+2025-01-05T16:00:00,Worker-9,Zone-D (Workshop),17.690004,83.221916,Morning,61,37.5
+2025-01-02T21:00:00,Worker-19,Zone-A (Coke Oven),17.687147,83.217408,Morning,102,37.9
+2025-01-08T05:00:00,Worker-18,Zone-B (Blast Furnace),17.686207,83.215279,Night,62,38.2
+2025-01-06T16:00:00,Worker-14,Zone-D (Workshop),17.688767,83.221865,Night,101,37.7
+2025-01-08T00:00:00,Worker-7,Zone-D (Workshop),17.688703,83.21794,Night,60,36.1
+2025-01-05T00:00:00,Worker-50,Zone-B (Blast Furnace),17.691088,83.217246,Morning,72,36.2
+2025-01-05T11:00:00,Worker-2,Zone-A (Coke Oven),17.685171,83.215422,Night,64,36.6
+2025-01-02T00:00:00,Worker-43,Zone-B (Blast Furnace),17.68904,83.21394,Night,66,38.0
+2025-01-04T10:00:00,Worker-36,Zone-B (Blast Furnace),17.688047,83.222843,Afternoon,87,36.3
+2025-01-03T06:00:00,Worker-7,Zone-C (Oxygen Plant),17.685034,83.21365,Night,80,36.0
+2025-01-03T06:00:00,Worker-30,Zone-B (Blast Furnace),17.68246,83.221651,Night,99,36.9
+2025-01-01T17:00:00,Worker-14,Zone-D (Workshop),17.684815,83.219489,Morning,105,37.3
+2025-01-07T01:00:00,Worker-11,Zone-C (Oxygen Plant),17.69139,83.219499,Night,104,37.0
+2025-01-09T05:00:00,Worker-45,Zone-B (Blast Furnace),17.68512,83.219854,Night,80,38.4
+2025-01-08T02:00:00,Worker-31,Zone-A (Coke Oven),17.685151,83.219585,Night,88,37.0
+2025-01-07T19:00:00,Worker-48,Zone-B (Blast Furnace),17.686834,83.220546,Morning,74,36.1
+2025-01-09T02:00:00,Worker-8,Zone-C (Oxygen Plant),17.684164,83.217785,Morning,99,36.2
+2025-01-02T11:00:00,Worker-24,Zone-D (Workshop),17.684766,83.215017,Morning,101,36.1
+2025-01-08T17:00:00,Worker-39,Zone-D (Workshop),17.689193,83.216787,Afternoon,80,37.6
+2025-01-09T02:00:00,Worker-3,Zone-D (Workshop),17.68828,83.216385,Morning,74,38.1
+2025-01-04T12:00:00,Worker-22,Zone-B (Blast Furnace),17.683858,83.214041,Night,75,38.0
+2025-01-08T10:00:00,Worker-47,Zone-B (Blast Furnace),17.687881,83.217315,Afternoon,71,37.1

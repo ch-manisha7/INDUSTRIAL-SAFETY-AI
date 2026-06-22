@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Industrial Safety Intelligence Platform</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<style>
+  :root {
+    --bg:       #0d1117;
+    --surface:  #161b22;
+    --border:   #30363d;
+    --text:     #e6edf3;
+    --muted:    #8b949e;
+    --red:      #f85149;
+    --orange:   #d29922;
+    --yellow:   #e3b341;
+    --green:    #3fb950;
+    --blue:     #58a6ff;
+    --purple:   #bc8cff;
+    --teal:     #39d353;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+
+  /* ── Nav ── */
+  nav { background: var(--surface); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; gap: 24px; height: 56px; position: sticky; top: 0; z-index: 100; }
+  .nav-brand { font-weight: 700; font-size: 15px; color: var(--text); display: flex; align-items: center; gap: 8px; }
+  .nav-brand span { font-size: 20px; }
+  .nav-tabs { display: flex; gap: 4px; margin-left: 16px; }
+  .nav-tab { padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 13px; color: var(--muted); border: none; background: none; transition: all .15s; }
+  .nav-tab:hover { background: rgba(255,255,255,.06); color: var(--text); }
+  .nav-tab.active { background: rgba(88,166,255,.15); color: var(--blue); }
+  .nav-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:.4} }
+
+  /* ── Layout ── */
+  .page { display: none; padding: 24px; max-width: 1400px; margin: 0 auto; }
+  .page.active { display: block; }
+
+  /* ── KPI Grid ── */
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .kpi-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+  .kpi-label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+  .kpi-value { font-size: 28px; font-weight: 700; }
+  .kpi-sub   { font-size: 12px; color: var(--muted); margin-top: 4px; }
+  .kpi-red    { color: var(--red); }
+  .kpi-orange { color: var(--orange); }
+  .kpi-green  { color: var(--green); }
+  .kpi-blue   { color: var(--blue); }
+  .kpi-yellow { color: var(--yellow); }
+  .kpi-purple { color: var(--purple); }
+
+  /* ── Grid ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-bottom: 16px; }
+  @media(max-width:900px){ .grid-2,.grid-3 { grid-template-columns: 1fr; } }
+
+  /* ── Card ── */
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .card-title { font-size: 13px; font-weight: 600; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 16px; }
+
+  /* ── Alert Banner ── */
+  .alert-banner { border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; border-left: 4px solid; font-size: 13px; line-height: 1.5; }
+  .alert-critical { background: rgba(248,81,73,.1); border-color: var(--red); }
+  .alert-high     { background: rgba(210,153,34,.1); border-color: var(--orange); }
+  .alert-warning  { background: rgba(227,179,65,.1); border-color: var(--yellow); }
+  .alert-ok       { background: rgba(63,185,80,.1);  border-color: var(--green); }
+  .alert-title    { font-weight: 600; margin-bottom: 4px; }
+
+  /* ── Badge ── */
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; }
+  .badge-red    { background: rgba(248,81,73,.2);  color: var(--red); }
+  .badge-orange { background: rgba(210,153,34,.2); color: var(--orange); }
+  .badge-yellow { background: rgba(227,179,65,.2); color: var(--yellow); }
+  .badge-green  { background: rgba(63,185,80,.2);  color: var(--green); }
+  .badge-blue   { background: rgba(88,166,255,.2); color: var(--blue); }
+
+  /* ── Table ── */
+  .tbl { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .tbl th { color: var(--muted); font-weight: 600; font-size: 11px; text-transform: uppercase; letter-spacing: .4px; padding: 8px 10px; border-bottom: 1px solid var(--border); text-align: left; }
+  .tbl td { padding: 9px 10px; border-bottom: 1px solid rgba(48,54,61,.5); vertical-align: middle; }
+  .tbl tr:last-child td { border-bottom: none; }
+  .tbl tr:hover td { background: rgba(255,255,255,.025); }
+
+  /* ── Zone Heatmap ── */
+  .zone-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .zone-tile { border-radius: 8px; padding: 14px; border: 1px solid var(--border); }
+  .zone-name { font-size: 12px; font-weight: 600; margin-bottom: 8px; }
+  .zone-metric { display: flex; justify-content: space-between; font-size: 11px; color: var(--muted); margin-top: 4px; }
+  .zone-bar { height: 4px; border-radius: 2px; margin-top: 4px; background: rgba(255,255,255,.08); }
+  .zone-bar-fill { height: 100%; border-radius: 2px; }
+
+  /* ── AI Panel ── */
+  .ai-controls { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px; }
+  select, input { background: #0d1117; border: 1px solid var(--border); color: var(--text); padding: 8px 12px; border-radius: 6px; font-size: 13px; outline: none; }
+  select:focus, input:focus { border-color: var(--blue); }
+  button { padding: 8px 16px; border-radius: 6px; border: none; cursor: pointer; font-size: 13px; font-weight: 500; transition: all .15s; }
+  .btn-primary { background: var(--blue); color: #000; }
+  .btn-primary:hover { opacity: .85; }
+  .btn-danger  { background: var(--red); color: #fff; }
+  .btn-danger:hover { opacity: .85; }
+  .btn-ghost   { background: rgba(255,255,255,.06); color: var(--text); }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+
+  .ai-response { background: #0d1117; border: 1px solid var(--border); border-radius: 8px; padding: 18px; min-height: 120px; font-size: 13px; line-height: 1.7; white-space: pre-wrap; font-family: inherit; }
+  .ai-response.loading { color: var(--muted); animation: blink 1.2s infinite; }
+  @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.3} }
+
+  /* ── Chat ── */
+  .chat-messages { height: 380px; overflow-y: auto; display: flex; flex-direction: column; gap: 12px; padding: 8px 0; margin-bottom: 12px; }
+  .msg { max-width: 80%; padding: 10px 14px; border-radius: 10px; font-size: 13px; line-height: 1.6; }
+  .msg-user { background: rgba(88,166,255,.15); border: 1px solid rgba(88,166,255,.3); align-self: flex-end; color: var(--text); }
+  .msg-ai   { background: var(--surface); border: 1px solid var(--border); align-self: flex-start; color: var(--text); }
+  .msg-label { font-size: 10px; color: var(--muted); margin-bottom: 4px; font-weight: 600; text-transform: uppercase; }
+  .chat-input-row { display: flex; gap: 8px; }
+  .chat-input-row input { flex: 1; }
+
+  /* ── Gauge ── */
+  .gauge-wrap { display: flex; align-items: center; gap: 16px; }
+  .gauge { width: 90px; height: 90px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; flex-shrink: 0; }
+
+  /* ── Sensor bar ── */
+  .sensor-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .sensor-label { font-size: 12px; width: 80px; color: var(--muted); flex-shrink: 0; }
+  .sensor-track { flex: 1; background: rgba(255,255,255,.07); height: 8px; border-radius: 4px; overflow: hidden; }
+  .sensor-fill  { height: 100%; border-radius: 4px; transition: width .4s; }
+  .sensor-val   { font-size: 12px; width: 55px; text-align: right; font-weight: 500; }
+
+  /* ── Compound risk ── */
+  .compound-event { border: 1px solid var(--red); border-radius: 8px; padding: 14px; margin-bottom: 12px; background: rgba(248,81,73,.05); }
+  .compound-event h4 { color: var(--red); margin-bottom: 8px; font-size: 13px; }
+  .compound-meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+
+  /* ── Compliance ── */
+  .compliance-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(48,54,61,.5); }
+  .compliance-item:last-child { border-bottom: none; }
+  .compliance-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
+
+  .page-header { margin-bottom: 20px; }
+  .page-header h2 { font-size: 20px; font-weight: 700; }
+  .page-header p  { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  /* Markdown Styling */
+
+.markdown-body {
+  line-height: 1.7;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  color: var(--blue);
+  margin-top: 12px;
+  margin-bottom: 8px;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 22px;
+  margin: 8px 0;
+}
+
+.markdown-body li {
+  margin-bottom: 6px;
+}
+
+.markdown-body p {
+  margin: 8px 0;
+}
+
+.markdown-body strong {
+  color: #ffffff;
+}
+
+.markdown-body code {
+  background: rgba(255,255,255,0.08);
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand"><span>🏭</span> Safety Intelligence Platform</div>
+  <div class="nav-tabs">
+    <button class="nav-tab active" onclick="showPage('dashboard')">Dashboard</button>
+    <button class="nav-tab" onclick="showPage('sensors')">Sensors</button>
+    <button class="nav-tab" onclick="showPage('compound')">Compound Risk</button>
+    <button class="nav-tab" onclick="showPage('incidents')">Incidents</button>
+    <button class="nav-tab" onclick="showPage('compliance')">Compliance</button>
+    <button class="nav-tab" onclick="showPage('ai')">AI Analysis</button>
+    <button class="nav-tab" onclick="showPage('chat')">SafetyGPT</button>
+  </div>
+  <div class="nav-right">
+    <div class="status-dot"></div>
+    <span style="font-size:12px;color:var(--muted)">Live</span>
+  </div>
+</nav>
+
+<!-- ── DASHBOARD ── -->
+<div id="page-dashboard" class="page active">
+  <div class="page-header">
+    <h2>Safety Command Centre</h2>
+    <p>Real-time overview of industrial safety across all zones</p>
+  </div>
+  <div class="kpi-grid" id="kpi-grid">
+    <div class="kpi-card"><div class="kpi-label">Total Readings</div><div class="kpi-value kpi-blue" id="k-readings">—</div><div class="kpi-sub">Sensor data points</div></div>
+    <div class="kpi-card"><div class="kpi-label">Danger Events</div><div class="kpi-value kpi-red" id="k-danger">—</div><div class="kpi-sub">Compound triggers</div></div>
+    <div class="kpi-card"><div class="kpi-label">Critical Incidents</div><div class="kpi-value kpi-orange" id="k-critical">—</div><div class="kpi-sub">All time</div></div>
+    <div class="kpi-card"><div class="kpi-label">Active Permits</div><div class="kpi-value kpi-yellow" id="k-permits">—</div><div class="kpi-sub">PTW in force</div></div>
+    <div class="kpi-card"><div class="kpi-label">Compliance</div><div class="kpi-value kpi-green" id="k-compliance">—</div><div class="kpi-sub">Regulatory score</div></div>
+    <div class="kpi-card"><div class="kpi-label">Compliance Gaps</div><div class="kpi-value kpi-purple" id="k-gaps">—</div><div class="kpi-sub">Action required</div></div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Zone Risk Heatmap</div>
+      <div class="zone-grid" id="zone-heatmap"></div>
+    </div>
+    <div class="card">
+      <div class="card-title">Incidents by Severity</div>
+      <canvas id="sev-chart" height="200"></canvas>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Top Incident Types</div>
+      <canvas id="type-chart" height="200"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">Compliance Gaps — Immediate Action Required</div>
+      <div id="compliance-gap-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── SENSORS ── -->
+<div id="page-sensors" class="page">
+  <div class="page-header">
+    <h2>Sensor Monitor</h2>
+    <p>Live gas, pressure, temperature and vibration readings with risk scoring</p>
+  </div>
+  <div class="card" style="margin-bottom:16px">
+    <div class="card-title">Gas Concentration Trends</div>
+    <canvas id="sensor-trend-chart" height="160"></canvas>
+  </div>
+  <div class="card">
+    <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+      <select id="zone-filter" onchange="loadSensors()">
+        <option value="">All Zones</option>
+        <option>Zone-A (Coke Oven)</option>
+        <option>Zone-B (Blast Furnace)</option>
+        <option>Zone-C (Oxygen Plant)</option>
+        <option>Zone-D (Workshop)</option>
+      </select>
+      <button class="btn-ghost" onclick="loadSensors()">🔄 Refresh</button>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="tbl">
+      <thead><tr>
+        <th>Timestamp</th><th>Zone</th><th>CO (ppm)</th><th>H2S (ppm)</th>
+        <th>O₂ (%)</th><th>Temp (°C)</th><th>Pressure (bar)</th><th>Risk</th><th>Alerts</th>
+      </tr></thead>
+      <tbody id="sensor-tbody"></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMPOUND RISK ── -->
+<div id="page-compound" class="page">
+  <div class="page-header">
+    <h2>Compound Risk Detection Engine</h2>
+    <p>Multi-factor dangerous condition correlation — active permits + sensor anomalies + maintenance status</p>
+  </div>
+  <div id="compound-container">
+    <div class="kpi-card" style="margin-bottom:16px">
+      <div class="kpi-label">Compound Events Detected</div>
+      <div class="kpi-value kpi-red" id="compound-count">—</div>
+      <div class="kpi-sub" id="compound-zones">Zones at risk: —</div>
+    </div>
+    <div id="compound-events-list"></div>
+  </div>
+</div>
+
+<!-- ── INCIDENTS ── -->
+<div id="page-incidents" class="page">
+  <div class="page-header">
+    <h2>Incident & Near-Miss Registry</h2>
+    <p>Historical incidents with root cause and corrective action tracking</p>
+  </div>
+  <div class="card">
+    <div style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap">
+      <select id="sev-filter" onchange="loadIncidents()">
+        <option value="">All Severities</option>
+        <option>Low</option><option>Medium</option><option>High</option><option>Critical</option>
+      </select>
+      <button class="btn-ghost" onclick="loadIncidents()">🔄 Refresh</button>
+    </div>
+    <div style="overflow-x:auto">
+    <table class="tbl">
+      <thead><tr>
+        <th>ID</th><th>Date</th><th>Zone</th><th>Type</th><th>Severity</th>
+        <th>Root Cause</th><th>Corrective Action</th><th>Days to Close</th>
+      </tr></thead>
+      <tbody id="incidents-tbody"></tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMPLIANCE ── -->
+<div id="page-compliance" class="page">
+  <div class="page-header">
+    <h2>Regulatory Compliance</h2>
+    <p>OISD / Factory Act / DGMS / PESO compliance status</p>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Compliance Status</div>
+      <canvas id="compliance-chart" height="220"></canvas>
+    </div>
+    <div class="card">
+      <div class="card-title">Clause-level Detail</div>
+      <div id="compliance-detail"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ── AI ANALYSIS ── -->
+<div id="page-ai" class="page">
+  <div class="page-header">
+    <h2>AI Safety Analysis</h2>
+    <p>OpenRouter-powered LLM analysis of plant safety data</p>
+  </div>
+  <div class="card">
+    <div class="ai-controls">
+      <select id="ai-zone">
+        <option value="">All Zones</option>
+        <option>Zone-A (Coke Oven)</option>
+        <option>Zone-B (Blast Furnace)</option>
+        <option>Zone-C (Oxygen Plant)</option>
+        <option>Zone-D (Workshop)</option>
+      </select>
+      <select id="ai-type">
+        <option value="risk_summary">Risk Summary</option>
+        <option value="incident_pattern">Incident Pattern Analysis</option>
+        <option value="compliance_review">Compliance Review</option>
+        <option value="emergency">Emergency Protocol</option>
+      </select>
+      <button class="btn-primary" onclick="runAIAnalysis()">▶ Run Analysis</button>
+      <button class="btn-danger"  onclick="runEmergency()">🚨 Emergency Protocol</button>
+    </div>
+    <div class="card-title">AI Response</div>
+    <div class="ai-response" id="ai-response">Select analysis type and click Run Analysis.</div>
+    <div style="margin-top:10px;font-size:11px;color:var(--muted)" id="ai-meta"></div>
+  </div>
+</div>
+
+<!-- ── SAFETYGPT CHAT ── -->
+<div id="page-chat" class="page">
+  <div class="page-header">
+    <h2>SafetyGPT — Field Operator Chat</h2>
+    <p>Ask anything about plant safety, OISD standards, PTW procedures, or current risk levels</p>
+  </div>
+  <div class="card">
+    <div class="chat-messages" id="chat-messages">
+      <div class="msg msg-ai">
+        <div class="msg-label">SafetyGPT</div>
+        Hello! I'm SafetyGPT, your AI safety assistant. Ask me about current gas levels, permit status, OISD regulations, or emergency procedures.
+      </div>
+    </div>
+    <div class="chat-input-row">
+      <input id="chat-input" type="text" placeholder="Ask about gas levels, permits, OISD procedures…" onkeydown="if(event.key==='Enter')sendChat()"/>
+      <button id="send-btn" class="btn-primary" onclick="sendChat()">Send</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = 'http://localhost:8000';
+
+// ── Nav ─────────────────────────────────────────────────────────────────────
+function showPage(name) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  event.target.classList.add('active');
+  if (name === 'sensors')    loadSensors();
+  if (name === 'compound')   loadCompound();
+  if (name === 'incidents')  loadIncidents();
+  if (name === 'compliance') loadCompliance();
+}
+
+// ── Helpers ──────────────────────────────────────────────────────────────────
+const sev2badge = s => ({
+  Critical:'badge-red', High:'badge-orange', Medium:'badge-yellow', Low:'badge-green'
+}[s] || 'badge-blue');
+
+function riskColor(score) {
+  if (score >= 60) return 'var(--red)';
+  if (score >= 30) return 'var(--orange)';
+  if (score >= 10) return 'var(--yellow)';
+  return 'var(--green)';
+}
+
+// ── Dashboard ────────────────────────────────────────────────────────────────
+async function loadDashboard() {
+  const d = await fetch(API + '/api/dashboard').then(r => r.json());
+  const k = d.kpis;
+  document.getElementById('k-readings').textContent   = k.total_sensor_readings.toLocaleString();
+  document.getElementById('k-danger').textContent     = k.danger_events_detected;
+  document.getElementById('k-critical').textContent   = k.critical_incidents;
+  document.getElementById('k-permits').textContent    = k.active_permits;
+  document.getElementById('k-compliance').textContent = k.overall_compliance_pct + '%';
+  document.getElementById('k-gaps').textContent       = k.compliance_gap_count;
+
+  // Zone heatmap
+  const zh = document.getElementById('zone-heatmap');
+  zh.innerHTML = '';
+  d.zone_risk_heatmap.forEach(z => {
+    const maxCO = 300;
+    const pct = Math.min((z.avg_CO / maxCO) * 100, 100);
+    const col  = pct > 60 ? 'var(--red)' : pct > 30 ? 'var(--orange)' : 'var(--green)';
+    zh.innerHTML += `
+      <div class="zone-tile" style="border-color:${col}30">
+        <div class="zone-name" style="color:${col}">${z.zone}</div>
+        <div class="zone-metric"><span>CO avg</span><span>${z.avg_CO} ppm</span></div>
+        <div class="zone-bar"><div class="zone-bar-fill" style="width:${pct}%;background:${col}"></div></div>
+        <div class="zone-metric"><span>H2S avg</span><span>${z.avg_H2S} ppm</span></div>
+        <div class="zone-metric"><span>Pressure</span><span>${z.avg_pressure} bar</span></div>
+      </div>`;
+  });
+
+  // Severity chart
+  const sevCtx = document.getElementById('sev-chart').getContext('2d');
+  const sevData = d.incident_by_severity;
+  new Chart(sevCtx, {
+    type: 'doughnut',
+    data: {
+      labels: Object.keys(sevData),
+      datasets: [{ data: Object.values(sevData), backgroundColor: ['#3fb950','#e3b341','#d29922','#f85149'], borderWidth: 0 }]
+    },
+    options: { plugins: { legend: { labels: { color: '#8b949e', font: { size: 12 } } } }, cutout: '65%' }
+  });
+
+  // Type chart
+  const typeCtx = document.getElementById('type-chart').getContext('2d');
+  const typeData = d.incident_by_type;
+  new Chart(typeCtx, {
+    type: 'bar',
+    data: {
+      labels: Object.keys(typeData).map(l => l.length > 22 ? l.slice(0,22)+'…' : l),
+      datasets: [{ data: Object.values(typeData), backgroundColor: '#58a6ff44', borderColor: '#58a6ff', borderWidth: 1, borderRadius: 4 }]
+    },
+    options: { indexAxis:'y', plugins:{legend:{display:false}}, scales:{ x:{ticks:{color:'#8b949e'},grid:{color:'#30363d'}}, y:{ticks:{color:'#8b949e'},grid:{display:false}} } }
+  });
+
+  // Compliance gaps
+  const cgl = document.getElementById('compliance-gap-list');
+  cgl.innerHTML = '';
+  d.compliance_gaps.forEach(g => {
+    cgl.innerHTML += `
+      <div class="alert-banner alert-critical">
+        <div class="alert-title">❌ ${g.regulation} — Clause ${g.clause}</div>
+        ${g.description}
+      </div>`;
+  });
+}
+
+// ── Sensors ──────────────────────────────────────────────────────────────────
+async function loadSensors() {
+  const zone  = document.getElementById('zone-filter').value;
+  const url   = API + '/api/sensors/latest?limit=30' + (zone ? '&zone=' + encodeURIComponent(zone) : '');
+  const data  = await fetch(url).then(r => r.json());
+  const tbody = document.getElementById('sensor-tbody');
+  tbody.innerHTML = '';
+  data.readings.forEach(r => {
+    const rs = r.risk_score || 0;
+    const col = riskColor(rs);
+    const alerts = (r.alerts || []).map(a => `<span class="badge ${a.level==='CRITICAL'?'badge-red':'badge-yellow'}">${a.param}</span>`).join(' ');
+    tbody.innerHTML += `<tr>
+      <td>${r.timestamp.slice(0,16).replace('T',' ')}</td>
+      <td>${r.zone}</td>
+      <td style="color:${r.CO_ppm>50?'var(--red)':r.CO_ppm>25?'var(--orange)':'inherit'}">${r.CO_ppm}</td>
+      <td style="color:${r.H2S_ppm>10?'var(--red)':r.H2S_ppm>5?'var(--orange)':'inherit'}">${r.H2S_ppm}</td>
+      <td style="color:${r.O2_percent<18?'var(--red)':r.O2_percent<19.5?'var(--orange)':'inherit'}">${r.O2_percent}</td>
+      <td>${r.temperature_C}</td>
+      <td>${r.pressure_bar}</td>
+      <td><span style="color:${col};font-weight:700">${rs}</span></td>
+      <td>${alerts || '<span style="color:var(--green);font-size:11px">✓ OK</span>'}</td>
+    </tr>`;
+  });
+
+  // Trend chart
+  const tdata = await fetch(API + '/api/sensors/stats').then(r => r.json());
+  const ts    = tdata.timeseries.slice(-30);
+  const sCtx  = document.getElementById('sensor-trend-chart').getContext('2d');
+  if (window._sensorChart) window._sensorChart.destroy();
+  window._sensorChart = new Chart(sCtx, {
+    type: 'line',
+    data: {
+      labels: ts.map(r => r.date.slice(5)),
+      datasets: [
+        { label:'CO avg', data: ts.map(r => r.avg_CO),   borderColor:'#f85149', tension:.4, pointRadius:2, fill:false },
+        { label:'H2S avg',data: ts.map(r => r.avg_H2S),  borderColor:'#d29922', tension:.4, pointRadius:2, fill:false },
+        { label:'O2 avg', data: ts.map(r => r.avg_O2),   borderColor:'#3fb950', tension:.4, pointRadius:2, fill:false, yAxisID:'y2' },
+        { label:'Danger', data: ts.map(r => r.danger_count), borderColor:'#bc8cff', tension:.4, pointRadius:3, fill:false, type:'bar', backgroundColor:'rgba(188,140,255,.3)' },
+      ]
+    },
+    options: {
+      plugins:{ legend:{ labels:{ color:'#8b949e', font:{size:11} } } },
+      scales:{
+        x:  { ticks:{color:'#8b949e',maxTicksLimit:10}, grid:{color:'#30363d'} },
+        y:  { ticks:{color:'#8b949e'}, grid:{color:'#30363d'} },
+        y2: { position:'right', ticks:{color:'#3fb950'}, grid:{display:false} }
+      }
+    }
+  });
+}
+
+// ── Compound Risk ─────────────────────────────────────────────────────────────
+async function loadCompound() {
+  const data = await fetch(API + '/api/compound-risk').then(r => r.json());
+  document.getElementById('compound-count').textContent = data.total_detected;
+  document.getElementById('compound-zones').textContent = 'Zones at risk: ' + (data.zones_at_risk.join(', ') || 'None');
+  const list = document.getElementById('compound-events-list');
+  list.innerHTML = '';
+  if (data.compound_events.length === 0) {
+    list.innerHTML = '<div class="alert-banner alert-ok"><div class="alert-title">✅ No Compound Risk Events Detected</div>All zones are operating within safe parameters.</div>';
+    return;
+  }
+  data.compound_events.forEach(e => {
+    list.innerHTML += `
+      <div class="compound-event">
+        <h4>🚨 ${e.zone} — ${e.condition}</h4>
+        <div>
+          CO: <strong>${e.CO_ppm} ppm</strong> | 
+          H2S: <strong>${e.H2S_ppm} ppm</strong> | 
+          O₂: <strong>${e.O2_percent}%</strong> | 
+          Permit: <strong>${e.permit_id} (${e.permit_type})</strong>
+        </div>
+        <div style="margin-top:8px;font-size:12px;color:var(--orange)">
+          ⚠ Gas Clearance Obtained: <strong>${e.gas_clearance ? 'Yes' : 'NO — CRITICAL VIOLATION'}</strong>
+        </div>
+        ${e.overdue_equipment.length ? `<div style="margin-top:6px;font-size:12px;color:var(--muted)">Overdue equipment in zone: ${e.overdue_equipment.join(', ')}</div>` : ''}
+        <div class="compound-meta">
+          <span class="badge ${e.risk_level==='CRITICAL'?'badge-red':'badge-orange'}">${e.risk_level}</span>
+        </div>
+        <div style="margin-top:10px;background:rgba(248,81,73,.08);border-radius:6px;padding:10px;font-size:12px;line-height:1.6">
+          <strong>Recommendation:</strong> ${e.recommendation}
+        </div>
+      </div>`;
+  });
+}
+
+// ── Incidents ─────────────────────────────────────────────────────────────────
+async function loadIncidents() {
+  const sev  = document.getElementById('sev-filter').value;
+  const url  = API + '/api/incidents?limit=50' + (sev ? '&severity=' + sev : '');
+  const data = await fetch(url).then(r => r.json());
+  const tbody = document.getElementById('incidents-tbody');
+  tbody.innerHTML = '';
+  data.incidents.forEach(i => {
+    tbody.innerHTML += `<tr>
+      <td style="font-family:monospace;font-size:11px">${i.incident_id}</td>
+      <td>${i.date_time.slice(0,10)}</td>
+      <td>${i.zone}</td>
+      <td>${i.incident_type}</td>
+      <td><span class="badge ${sev2badge(i.severity)}">${i.severity}</span></td>
+      <td style="color:var(--muted)">${i.root_cause}</td>
+      <td style="color:var(--muted)">${i.corrective_action}</td>
+      <td>${i.days_to_close}d</td>
+    </tr>`;
+  });
+}
+
+// ── Compliance ─────────────────────────────────────────────────────────────────
+async function loadCompliance() {
+  const data = await fetch(API + '/api/compliance').then(r => r.json());
+  const ctx  = document.getElementById('compliance-chart').getContext('2d');
+  new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Compliant', 'Non-Compliant'],
+      datasets: [{ data:[data.compliant_count, data.non_compliant_count], backgroundColor:['#3fb950','#f85149'], borderWidth:0 }]
+    },
+    options: {
+      plugins:{ legend:{ labels:{ color:'#8b949e' } } },
+      cutout: '60%'
+    }
+  });
+
+  const det = document.getElementById('compliance-detail');
+  det.innerHTML = '';
+  data.items.forEach(item => {
+    det.innerHTML += `
+      <div class="compliance-item">
+        <div class="compliance-icon">${item.compliant ? '✅' : '❌'}</div>
+        <div>
+          <div style="font-size:12px;font-weight:600">${item.regulation} — ${item.clause}</div>
+          <div style="font-size:12px;color:var(--muted);margin-top:2px">${item.description}</div>
+          ${!item.compliant ? `<div style="font-size:11px;color:var(--red);margin-top:4px">Action required — contact compliance officer</div>` : ''}
+        </div>
+      </div>`;
+  });
+}
+
+// ── AI Analysis ───────────────────────────────────────────────────────────────
+async function runAIAnalysis() {
+  const zone = document.getElementById('ai-zone').value;
+  const type = document.getElementById('ai-type').value;
+  const box  = document.getElementById('ai-response');
+  const meta = document.getElementById('ai-meta');
+  box.className  = 'ai-response loading';
+  box.textContent = 'Analysing plant safety data…';
+  meta.textContent = '';
+  try {
+    const res = await fetch(API + '/api/ai/analyze', {
+      method:'POST', headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ zone: zone || null, query_type: type })
+    }).then(r => r.json());
+    box.className  = 'ai-response';
+    box.textContent = res.analysis;
+    meta.textContent = `Model: ${res.model} | Zone: ${res.zone} | ${res.timestamp.slice(0,19)}`;
+  } catch(e) {
+    box.className  = 'ai-response';
+    box.textContent = '❌ Error: ' + e.message + '\n\nMake sure OPENROUTER_API_KEY is set and the backend is running.';
+  }
+}
+
+function runEmergency() {
+  document.getElementById('ai-type').value = 'emergency';
+  runAIAnalysis();
+}
+
+// ── Chat ──────────────────────────────────────────────────────────────────────
+let chatLoading = false;
+async function sendChat() {
+  if (chatLoading) return;
+
+  const inp = document.getElementById('chat-input');
+  const msg = inp.value.trim();
+
+  if (!msg) return;
+
+  chatLoading = true;
+
+  const btn = document.getElementById('send-btn');
+
+  btn.disabled = true;
+  btn.textContent = 'Thinking...';
+
+  inp.value = '';
+
+  const msgs = document.getElementById('chat-messages');
+
+  // User message
+  msgs.innerHTML += `
+    <div class="msg msg-user">
+      <div class="msg-label">You</div>
+      ${msg}
+    </div>
+  `;
+
+  // Unique placeholder
+  const uniqueId = 'typing-' + Date.now();
+
+  msgs.innerHTML += `
+    <div class="msg msg-ai" id="${uniqueId}">
+      <div class="msg-label">SafetyGPT</div>
+      <em style="color:var(--muted)">Thinking...</em>
+    </div>
+  `;
+
+  msgs.scrollTop = msgs.scrollHeight;
+
+  try {
+    const response = await fetch(API + '/api/ai/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        message: msg
+      })
+    });
+
+    const data = await response.json();
+
+    const aiMessage = document.getElementById(uniqueId);
+
+    if (aiMessage) {
+      aiMessage.innerHTML = `
+        <div class="msg-label">SafetyGPT</div>
+        ${data.reply.replace(/\n/g, '<br>')}
+      `;
+    }
+
+  } catch (error) {
+
+    const aiMessage = document.getElementById(uniqueId);
+    aiMessage.innerHTML = `
+    <div class="msg-label">SafetyGPT</div>
+    <div class="markdown-body">
+      ${marked.parse(data.reply)}
+      </div>
+      `;
+
+    console.error(error);
+
+  } finally {
+
+    btn.disabled = false;
+    btn.textContent = 'Send';
+
+    chatLoading = false;
+
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+}
+// ── Init ──────────────────────────────────────────────────────────────────────
+loadDashboard();
+</script>
+</body>
+</html>
